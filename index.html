@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cubeicals</title>
+
+  <!-- phosphor icon -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="src/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="sticky w-full top-0 z-40 bg-white">
+    <div class="container">
+      <!-- desktop -->
+      <div class="hidden lg:flex items-center gap-2 justify-between relative">
+        <!-- logo -->
+        <a href="#" class="inline-block py-3">
+          <img src="src/images/logo.png" alt="">
+        </a>
+
+        <!-- menu -->
+        <ul class="flex items-center gap-6">
+          <li class="py-5 cursor-pointer group menu-li">
+            <button type="button" class="text-base font-medium text-[#9397AD] flex items-center gap-1">
+              Landings
+              <i class="ph ph-caret-down"></i>
+            </button>
+
+            <div class="megamenu flex justify-between w-[670px] absolute left-1/2 -translate-x-1/2 top-full bg-white z-20 border border-[#E2E5F1] rounded-[10px] overflow-hidden transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+              <ul class="space-y-6 p-6">
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Mobile App Showcase v.1</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Mobile App Showcase v.2</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">SaaS v.1</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">SaaS v.2</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">SaaS v.3</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Financial Consulting</a>
+                </li>
+              </ul>
+              <ul class="space-y-6 p-6">
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Medical</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">IT Company</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Conference</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Digital Agency</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Blog Homepage</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Online Courses</a>
+                </li>
+              </ul>
+
+              <div class="w-64 flex-shrink-0">
+                <img src="src/images/megamenu.png" alt="" class="h-full w-full object-cover">
+              </div>
+            </div>
+          </li>
+          <li class="py-5 cursor-pointer group menu-li">
+            <button type="button" class="text-base font-medium text-[#9397AD] flex items-center gap-1">
+              Blog
+              <i class="ph ph-caret-down"></i>
+            </button>
+
+            <div class="megamenu flex justify-between w-[670px] absolute left-1/2 -translate-x-1/2 top-full bg-white z-20 border border-[#E2E5F1] rounded-[10px] overflow-hidden transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+              <ul class="space-y-6 p-6">
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Single Post</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Simple Feed</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Grid View no Sidebar</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">List View no Sidebar</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">List View with Sidebar</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Grid View with Sidebar</a>
+                </li>
+              </ul>
+
+              <div class="w-64 flex-shrink-0">
+                <img src="src/images/megamenu.png" alt="" class="h-full w-full object-cover">
+              </div>
+            </div>
+          </li>
+          <li class="py-5 cursor-pointer group menu-li">
+            <button type="button" class="text-base font-medium text-[#9397AD] flex items-center gap-1">
+              Pages
+              <i class="ph ph-caret-down"></i>
+            </button>
+
+            <div class="megamenu flex justify-between w-[670px] absolute left-1/2 -translate-x-1/2 top-full bg-white z-20 border border-[#E2E5F1] rounded-[10px] overflow-hidden transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+              <div class="space-y-6 p-6">
+                <div>
+                  <h5 class="pb-6 text-sm font-bold text-[#131022]">Error page</h5>
+                  <ul class="space-y-6">
+                    <li>
+                      <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">404 v.1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">404 v.2</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="pb-6 text-sm font-bold text-[#131022]">About Us</h5>
+                  <ul class="space-y-6">
+                    <li>
+                      <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">About Us v.1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">About Us v.2</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="pb-6 text-sm font-bold text-[#131022]">Portfolio</h5>
+                <ul class="space-y-6">
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Portfolio Grid View</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Portfolio List View</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Portfolio Slider View</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Project Details</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Single Project</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="p-6">
+                <h5 class="pb-6 text-sm font-bold text-[#131022]">Pricing</h5>
+                <ul class="space-y-6">
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Contact v.1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Contact v.2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Grid View with Sidebar</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="py-5 cursor-pointer group menu-li">
+            <button type="button" class="text-base font-medium text-[#9397AD] flex items-center gap-1">
+              Accounts
+              <i class="ph ph-caret-down"></i>
+            </button>
+
+            <div class="megamenu flex justify-between w-[670px] absolute left-1/2 -translate-x-1/2 top-full bg-white z-20 border border-[#E2E5F1] rounded-[10px] overflow-hidden transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+              <div class="p-6">
+                <h5 class="pb-6 text-sm font-bold text-[#131022]">Accounts</h5>
+                <ul class="space-y-6">
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Contact v.1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Contact v.2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">List View no Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">List View with Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Grid View with Sidebar</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="w-64 flex-shrink-0">
+                <img src="src/images/megamenu.png" alt="" class="h-full w-full object-cover">
+              </div>
+            </div>
+          </li>
+          <li class="py-5 cursor-pointer group menu-li">
+            <button type="button" class="text-base font-medium text-[#9397AD] flex items-center gap-1">
+              Services
+              <i class="ph ph-caret-down"></i>
+            </button>
+
+            <div class="megamenu flex justify-between w-[670px] absolute left-1/2 -translate-x-1/2 top-full bg-white z-20 border border-[#E2E5F1] rounded-[10px] overflow-hidden transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+              <div class="p-6">
+                <h5 class="pb-6 text-sm font-bold text-[#131022]">Services</h5>
+                <ul class="space-y-6">
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Services v.1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Services v.2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Services Details v.1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-[#585C7B] transition-all duration-300 hover:text-primary">Services Details v.1</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="w-64 flex-shrink-0">
+                <img src="src/images/megamenu.png" alt="" class="h-full w-full object-cover">
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- buttons -->
+        <ul class="flex items-center gap-2">
+          <li>
+            <a href="#" class="inline-block text-sm font-medium text-primary border border-primary py-2 px-5 rounded-lg">Sign in</a>
+          </li>
+          <li>
+            <a href="#" class="inline-block text-sm font-medium text-white border border-primary bg-primary py-2 px-5 rounded-lg">Sign up</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- mobile -->
+      <div class="flex lg:hidden items-center justify-between">
+        <!-- logo -->
+        <a href="#" class="inline-block py-3">
+          <img src="src/images/logo.png" alt="">
+        </a>
+
+        <!-- menu toggle button -->
+        <button type="button" class="rounded h-10 w-10 flex items-center justify-center bg-[#F5F5F5]">
+          <img src="src/images/icons/hambergermenu.svg" alt="">
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- main start -->
+  <main>
+    <!-- banner start -->
+    <section class="relative">
+      <div class="swiper blog-banner-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="src/images/banner/hero-1.png" alt="" class="w-full min-h-[600px] object-cover">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/images/banner/hero-2.png" alt="" class="w-full min-h-[600px] object-cover">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/images/banner/hero-3.png" alt="" class="w-full min-h-[600px] object-cover">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/images/banner/hero-4.png" alt="" class="w-full min-h-[600px] object-cover">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/images/banner/hero-5.png" alt="" class="w-full min-h-[600px] object-cover">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/images/banner/hero-6.png" alt="" class="w-full min-h-[600px] object-cover">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/images/banner/hero-7.png" alt="" class="w-full min-h-[600px] object-cover">
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-0 left-0 z-20 w-full">
+        <div class="container flex justify-end">
+          <div class="max-w-[546px] w-full bg-white rounded-t-2xl p-4 lg:p-6">
+            <div class="flex items-center justify-end gap-3">
+              <button type="button" class="blog-banner-prev flex items-center justify-center h-8 lg:h-12 w-8 lg:w-12 group">
+                <i class="ph ph-caret-left text-2xl lg:text-3xl text-[#131022] group-disabled:text-[#9397AD]"></i>
+              </button>
+              <button type="button" class="blog-banner-next flex items-center justify-center h-8 lg:h-12 w-8 lg:w-12 group">
+                <i class="ph ph-caret-right text-2xl lg:text-3xl text-[#131022] group-disabled:text-[#9397AD]"></i>
+              </button>
+            </div>
+            <div class="swiper blog-banner-slider">
+              <div class="swiper-wrapper">
+                <!-- item 1 -->
+                <div class="swiper-slide bg-white">
+                  <div class="flex items-center justify-between pt-1 md:pt-4 pb-4 md:pb-6">
+                    <span class="font-bold font-sfBold text-sm text-primary py-[2px] px-1">#Business</span>
+                    <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                  </div>
+      
+                  <h4 class="text-xl lg:text-2xl font-bold font-sfBold">How to play with different shapes, Shadows & Lightings</h4>
+                  <p class="pt-4 pb-6 md:pb-10 text-sm lg:text-base text-[#9397AD]">Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+                  <div class="flex flex-col md:flex-row items-start md:items-center max-w-[340px] w-full gap-6 lg:gap-10">
+                    <div class="flex items-center gap-3">
+                      <div class="h-8 lg:h-10 w-8 lg:w-10 rounded-full overflow-hidden">
+                        <img src="src/images/avatar/avatar-1.png" alt="" class="w-full">
+                      </div>
+
+                      <p class="text-base text-[#9397AD]">By <a href="#" class="underline">Foster Clark</a></p>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-thumbs-up text-xl"></i>8
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-chat text-xl"></i>4
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <img src="src/images/icons/share.svg" alt="">2
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- item 2 -->
+                <div class="swiper-slide bg-white">
+                  <div class="flex items-center justify-between pt-1 md:pt-4 pb-4 md:pb-6">
+                    <span class="font-bold font-sfBold text-sm text-primary py-[2px] px-1">#Blog</span>
+                    <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                  </div>
+      
+                  <h4 class="text-xl lg:text-2xl font-bold font-sfBold">How to play with different shapes, Shadows & Lightings</h4>
+                  <p class="pt-4 pb-6 md:pb-10 text-sm lg:text-base text-[#9397AD]">Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+                  <div class="flex flex-col md:flex-row items-start md:items-center max-w-[340px] w-full gap-6 lg:gap-10">
+                    <div class="flex items-center gap-3">
+                      <div class="h-8 lg:h-10 w-8 lg:w-10 rounded-full overflow-hidden">
+                        <img src="src/images/avatar/avatar-1.png" alt="" class="w-full">
+                      </div>
+
+                      <p class="text-base text-[#9397AD]">By <a href="#" class="underline">Foster Clark</a></p>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-thumbs-up text-xl"></i>8
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-chat text-xl"></i>4
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <img src="src/images/icons/share.svg" alt="">2
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- item 3 -->
+                <div class="swiper-slide bg-white">
+                  <div class="flex items-center justify-between pt-1 md:pt-4 pb-4 md:pb-6">
+                    <span class="font-bold font-sfBold text-sm text-primary py-[2px] px-1">#Analytics</span>
+                    <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                  </div>
+      
+                  <h4 class="text-xl lg:text-2xl font-bold font-sfBold">How to play with different shapes, Shadows & Lightings</h4>
+                  <p class="pt-4 pb-6 md:pb-10 text-sm lg:text-base text-[#9397AD]">Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+                  <div class="flex flex-col md:flex-row items-start md:items-center max-w-[340px] w-full gap-6 lg:gap-10">
+                    <div class="flex items-center gap-3">
+                      <div class="h-8 lg:h-10 w-8 lg:w-10 rounded-full overflow-hidden">
+                        <img src="src/images/avatar/avatar-1.png" alt="" class="w-full">
+                      </div>
+
+                      <p class="text-base text-[#9397AD]">By <a href="#" class="underline">Foster Clark</a></p>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-thumbs-up text-xl"></i>8
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-chat text-xl"></i>4
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <img src="src/images/icons/share.svg" alt="">2
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- item 4 -->
+                <div class="swiper-slide bg-white">
+                  <div class="flex items-center justify-between pt-1 md:pt-4 pb-4 md:pb-6">
+                    <span class="font-bold font-sfBold text-sm text-primary py-[2px] px-1">#Business</span>
+                    <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                  </div>
+      
+                  <h4 class="text-xl lg:text-2xl font-bold font-sfBold">How to play with different shapes, Shadows & Lightings</h4>
+                  <p class="pt-4 pb-6 md:pb-10 text-sm lg:text-base text-[#9397AD]">Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+                  <div class="flex flex-col md:flex-row items-start md:items-center max-w-[340px] w-full gap-6 lg:gap-10">
+                    <div class="flex items-center gap-3">
+                      <div class="h-8 lg:h-10 w-8 lg:w-10 rounded-full overflow-hidden">
+                        <img src="src/images/avatar/avatar-1.png" alt="" class="w-full">
+                      </div>
+
+                      <p class="text-base text-[#9397AD]">By <a href="#" class="underline">Foster Clark</a></p>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-thumbs-up text-xl"></i>8
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-chat text-xl"></i>4
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <img src="src/images/icons/share.svg" alt="">2
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- item 5 -->
+                <div class="swiper-slide bg-white">
+                  <div class="flex items-center justify-between pt-1 md:pt-4 pb-4 md:pb-6">
+                    <span class="font-bold font-sfBold text-sm text-primary py-[2px] px-1">#Blog</span>
+                    <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                  </div>
+      
+                  <h4 class="text-xl lg:text-2xl font-bold font-sfBold">How to play with different shapes, Shadows & Lightings</h4>
+                  <p class="pt-4 pb-6 md:pb-10 text-sm lg:text-base text-[#9397AD]">Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+                  <div class="flex flex-col md:flex-row items-start md:items-center max-w-[340px] w-full gap-6 lg:gap-10">
+                    <div class="flex items-center gap-3">
+                      <div class="h-8 lg:h-10 w-8 lg:w-10 rounded-full overflow-hidden">
+                        <img src="src/images/avatar/avatar-1.png" alt="" class="w-full">
+                      </div>
+
+                      <p class="text-base text-[#9397AD]">By <a href="#" class="underline">Foster Clark</a></p>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-thumbs-up text-xl"></i>8
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-chat text-xl"></i>4
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <img src="src/images/icons/share.svg" alt="">2
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- item 6 -->
+                <div class="swiper-slide bg-white">
+                  <div class="flex items-center justify-between pt-1 md:pt-4 pb-4 md:pb-6">
+                    <span class="font-bold font-sfBold text-sm text-primary py-[2px] px-1">#Business</span>
+                    <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                  </div>
+      
+                  <h4 class="text-xl lg:text-2xl font-bold font-sfBold">How to play with different shapes, Shadows & Lightings</h4>
+                  <p class="pt-4 pb-6 md:pb-10 text-sm lg:text-base text-[#9397AD]">Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+                  <div class="flex flex-col md:flex-row items-start md:items-center max-w-[340px] w-full gap-6 lg:gap-10">
+                    <div class="flex items-center gap-3">
+                      <div class="h-8 lg:h-10 w-8 lg:w-10 rounded-full overflow-hidden">
+                        <img src="src/images/avatar/avatar-1.png" alt="" class="w-full">
+                      </div>
+
+                      <p class="text-base text-[#9397AD]">By <a href="#" class="underline">Foster Clark</a></p>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-thumbs-up text-xl"></i>8
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-chat text-xl"></i>4
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <img src="src/images/icons/share.svg" alt="">2
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- item 7 -->
+                <div class="swiper-slide bg-white">
+                  <div class="flex items-center justify-between pt-1 md:pt-4 pb-4 md:pb-6">
+                    <span class="font-bold font-sfBold text-sm text-primary py-[2px] px-1">#Business</span>
+                    <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                  </div>
+      
+                  <h4 class="text-xl lg:text-2xl font-bold font-sfBold">How to play with different shapes, Shadows & Lightings</h4>
+                  <p class="pt-4 pb-6 md:pb-10 text-sm lg:text-base text-[#9397AD]">Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+                  <div class="flex flex-col md:flex-row items-start md:items-center max-w-[340px] w-full gap-6 lg:gap-10">
+                    <div class="flex items-center gap-3">
+                      <div class="h-8 lg:h-10 w-8 lg:w-10 rounded-full overflow-hidden">
+                        <img src="src/images/avatar/avatar-1.png" alt="" class="w-full">
+                      </div>
+
+                      <p class="text-base text-[#9397AD]">By <a href="#" class="underline">Foster Clark</a></p>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-thumbs-up text-xl"></i>8
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <i class="ph ph-chat text-xl"></i>4
+                      </p>
+                      <p class="flex items-center gap-1 text-sm text-[#9397AD]">
+                        <img src="src/images/icons/share.svg" alt="">2
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- featured-post start -->
+    <section class="pt-10 lg:pt-20 pb-10 px-4 sm:px-0">
+      <h2 class="text-center text-2xl lg:text-[40px] text-[#131022] font-bold font-sfBold pb-4">Featured Posts</h2>
+      <div class="swiper featured-blog-slider py-4">
+        <div class="swiper-wrapper">
+          <!-- item 1 -->
+          <div class="swiper-slide">
+            <div class="overflow-hidden featured-blog-card rounded-lg">
+              <div class="w-full h-[300px] relative">
+                <img src="src/images/featured/blog-1.png" alt="" class="w-full h-full object-cover">
+                <span class="h-9 w-9 bg-white rounded-full flex items-center justify-center absolute top-6 right-6">
+                  <i class="ph ph-bookmark-simple text-[#115175]"></i>
+                </span>
+              </div>
+
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <span class="inline-block text-primary text-sm font-sfBold font-bold py-[2px] px-1">#Nature</span>
+                  <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                </div>
+
+                <a href="#" class="block mt-2 mb-4 md:mb-6 text-base md:text-xl font-sfBold font-bold text-[#131022]">Nature Connection Exercise – Perceive and Receive</a>
+
+                <div class="flex items-center gap-4 border-t border-[#E2E5F1] pt-4 md:pt-6">
+                  <div class="h-10 md:h-12 w-10 md:w-12 overflow-hidden rounded-full">
+                    <img src="src/images/avatar/avatar-1.png" alt="" class="w-full">
+                  </div>
+                  <div>
+                    <h6 class="text-sm md:text-base font-medium text-[#131022]">Jerome Bell</h6>
+                    <p class="text-[#9397AD] text-xs md:text-sm">Deputy Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="swiper-slide">
+            <div class="overflow-hidden featured-blog-card rounded-lg">
+              <div class="w-full h-[300px] relative">
+                <img src="src/images/featured/blog-2.png" alt="" class="w-full h-full object-cover">
+                <span class="h-9 w-9 bg-white rounded-full flex items-center justify-center absolute top-6 right-6">
+                  <i class="ph ph-bookmark-simple text-[#115175]"></i>
+                </span>
+              </div>
+
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <span class="inline-block text-primary text-sm font-sfBold font-bold py-[2px] px-1">#Nature</span>
+                  <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                </div>
+
+                <a href="#" class="block mt-2 mb-4 md:mb-6 text-base md:text-xl font-sfBold font-bold text-[#131022]">Nature Connection Exercise – Perceive and Receive</a>
+
+                <div class="flex items-center gap-4 border-t border-[#E2E5F1] pt-4 md:pt-6">
+                  <div class="h-10 md:h-12 w-10 md:w-12 overflow-hidden rounded-full">
+                    <img src="src/images/avatar/avatar-2.png" alt="" class="w-full">
+                  </div>
+                  <div>
+                    <h6 class="text-sm md:text-base font-medium text-[#131022]">Jerome Bell</h6>
+                    <p class="text-[#9397AD] text-xs md:text-sm">Deputy Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="swiper-slide">
+            <div class="overflow-hidden featured-blog-card rounded-lg">
+              <div class="w-full h-[300px] relative">
+                <img src="src/images/featured/blog-3.png" alt="" class="w-full h-full object-cover">
+                <span class="h-9 w-9 bg-white rounded-full flex items-center justify-center absolute top-6 right-6">
+                  <i class="ph ph-bookmark-simple text-[#115175]"></i>
+                </span>
+              </div>
+
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <span class="inline-block text-primary text-sm font-sfBold font-bold py-[2px] px-1">#Nature</span>
+                  <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                </div>
+
+                <a href="#" class="block mt-2 mb-4 md:mb-6 text-base md:text-xl font-sfBold font-bold text-[#131022]">Nature Connection Exercise – Perceive and Receive</a>
+
+                <div class="flex items-center gap-4 border-t border-[#E2E5F1] pt-4 md:pt-6">
+                  <div class="h-10 md:h-12 w-10 md:w-12 overflow-hidden rounded-full">
+                    <img src="src/images/avatar/avatar-3.png" alt="" class="w-full">
+                  </div>
+                  <div>
+                    <h6 class="text-sm md:text-base font-medium text-[#131022]">Jerome Bell</h6>
+                    <p class="text-[#9397AD] text-xs md:text-sm">Deputy Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 4 -->
+          <div class="swiper-slide">
+            <div class="overflow-hidden featured-blog-card rounded-lg">
+              <div class="w-full h-[300px] relative">
+                <img src="src/images/featured/blog-4.png" alt="" class="w-full h-full object-cover">
+                <span class="h-9 w-9 bg-white rounded-full flex items-center justify-center absolute top-6 right-6">
+                  <i class="ph ph-bookmark-simple text-[#115175]"></i>
+                </span>
+              </div>
+
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <span class="inline-block text-primary text-sm font-sfBold font-bold py-[2px] px-1">#Nature</span>
+                  <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                </div>
+
+                <a href="#" class="block mt-2 mb-4 md:mb-6 text-base md:text-xl font-sfBold font-bold text-[#131022]">Nature Connection Exercise – Perceive and Receive</a>
+
+                <div class="flex items-center gap-4 border-t border-[#E2E5F1] pt-4 md:pt-6">
+                  <div class="h-10 md:h-12 w-10 md:w-12 overflow-hidden rounded-full">
+                    <img src="src/images/avatar/avatar-4.png" alt="" class="w-full">
+                  </div>
+                  <div>
+                    <h6 class="text-sm md:text-base font-medium text-[#131022]">Jerome Bell</h6>
+                    <p class="text-[#9397AD] text-xs md:text-sm">Deputy Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 5 -->
+          <div class="swiper-slide">
+            <div class="overflow-hidden featured-blog-card rounded-lg">
+              <div class="w-full h-[300px] relative">
+                <img src="src/images/featured/blog-5.png" alt="" class="w-full h-full object-cover">
+                <span class="h-9 w-9 bg-white rounded-full flex items-center justify-center absolute top-6 right-6">
+                  <i class="ph ph-bookmark-simple text-[#115175]"></i>
+                </span>
+              </div>
+
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <span class="inline-block text-primary text-sm font-sfBold font-bold py-[2px] px-1">#Nature</span>
+                  <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                </div>
+
+                <a href="#" class="block mt-2 mb-4 md:mb-6 text-base md:text-xl font-sfBold font-bold text-[#131022]">Nature Connection Exercise – Perceive and Receive</a>
+
+                <div class="flex items-center gap-4 border-t border-[#E2E5F1] pt-4 md:pt-6">
+                  <div class="h-10 md:h-12 w-10 md:w-12 overflow-hidden rounded-full">
+                    <img src="src/images/avatar/avatar-5.png" alt="" class="w-full">
+                  </div>
+                  <div>
+                    <h6 class="text-sm md:text-base font-medium text-[#131022]">Jerome Bell</h6>
+                    <p class="text-[#9397AD] text-xs md:text-sm">Deputy Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 6 -->
+          <div class="swiper-slide">
+            <div class="overflow-hidden featured-blog-card rounded-lg">
+              <div class="w-full h-[300px] relative">
+                <img src="src/images/featured/blog-6.png" alt="" class="w-full h-full object-cover">
+                <span class="h-9 w-9 bg-white rounded-full flex items-center justify-center absolute top-6 right-6">
+                  <i class="ph ph-bookmark-simple text-[#115175]"></i>
+                </span>
+              </div>
+
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <span class="inline-block text-primary text-sm font-sfBold font-bold py-[2px] px-1">#Nature</span>
+                  <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                </div>
+
+                <a href="#" class="block mt-2 mb-4 md:mb-6 text-base md:text-xl font-sfBold font-bold text-[#131022]">Nature Connection Exercise – Perceive and Receive</a>
+
+                <div class="flex items-center gap-4 border-t border-[#E2E5F1] pt-4 md:pt-6">
+                  <div class="h-10 md:h-12 w-10 md:w-12 overflow-hidden rounded-full">
+                    <img src="src/images/avatar/avatar-1.png" alt="" class="w-full">
+                  </div>
+                  <div>
+                    <h6 class="text-sm md:text-base font-medium text-[#131022]">Jerome Bell</h6>
+                    <p class="text-[#9397AD] text-xs md:text-sm">Deputy Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 7 -->
+          <div class="swiper-slide">
+            <div class="overflow-hidden featured-blog-card rounded-lg">
+              <div class="w-full h-[300px] relative">
+                <img src="src/images/featured/blog-7.png" alt="" class="w-full h-full object-cover">
+                <span class="h-9 w-9 bg-white rounded-full flex items-center justify-center absolute top-6 right-6">
+                  <i class="ph ph-bookmark-simple text-[#115175]"></i>
+                </span>
+              </div>
+
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <span class="inline-block text-primary text-sm font-sfBold font-bold py-[2px] px-1">#Nature</span>
+                  <p class="text-xs md:text-sm text-[#9397AD]">May 19, 2021</p>
+                </div>
+
+                <a href="#" class="block mt-2 mb-4 md:mb-6 text-base md:text-xl font-sfBold font-bold text-[#131022]">Nature Connection Exercise – Perceive and Receive</a>
+
+                <div class="flex items-center gap-4 border-t border-[#E2E5F1] pt-4 md:pt-6">
+                  <div class="h-10 md:h-12 w-10 md:w-12 overflow-hidden rounded-full">
+                    <img src="src/images/avatar/avatar-2.png" alt="" class="w-full">
+                  </div>
+                  <div>
+                    <h6 class="text-sm md:text-base font-medium text-[#131022]">Jerome Bell</h6>
+                    <p class="text-[#9397AD] text-xs md:text-sm">Deputy Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- featured-post end -->
+  </main>
+  <!-- main end -->
+
+  <!-- footer start -->
+  <footer class="bg-[#021B29]">
+    <section class="py-10 lg:py-16">
+      <div class="container">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- column 1 -->
+          <div>
+            <h4 class="text-[#FEFFFF] text-sm md:text-base font-bold pb-4 md:pb-6 font-sfBold">Home</h4>
+            <ul class="space-y-3 md:space-y-4">
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Mobile App Showcase 1</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Mobile App Showcase 2</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">SaaS 1</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">SaaS 2</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">SaaS 3</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Financial Consulting</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Online Courses</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Medical</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">IT (Software) Company</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Conference</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Digital Agency</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Blog Homepage</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Portfolio Grid View</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Portfolio List View</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Portfolio Slider View</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- column 2 -->
+          <div class="space-y-6">
+            <div>
+              <h4 class="text-[#FEFFFF] text-sm md:text-base font-bold pb-4 md:pb-6 font-sfBold">Blog</h4>
+              <ul class="space-y-3 md:space-y-4">
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Blog List</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Blog Grid</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Blog List with Sidebar</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Blog Grid with Sidebar</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Blog Simple Feed</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Single Post</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Podcast</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-[#FEFFFF] text-sm md:text-base font-bold pb-4 md:pb-6 font-sfBold">Service</h4>
+              <ul class="space-y-3 md:space-y-4">
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Services 1</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Services 2</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-[#FEFFFF] text-sm md:text-base font-bold pb-4 md:pb-6 font-sfBold">About</h4>
+              <ul class="space-y-3 md:space-y-4">
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">About 1</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">About 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- column 3 -->
+          <div>
+            <h4 class="text-[#FEFFFF] text-sm md:text-base font-bold pb-4 md:pb-6 font-sfBold">Others</h4>
+            <ul class="space-y-3 md:space-y-4">
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Service Details 1</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Service Details 2</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Course Details</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Project Details</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Courses</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">404 Error 1</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">404 Error 2</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- column 4 -->
+          <div>
+            <h4 class="text-[#FEFFFF] text-sm md:text-base font-bold pb-4 md:pb-6 font-sfBold">Account</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Account Sign In</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Account Sign Up</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Account Details</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Account Security</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Account Notifications</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Account Messages</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Account Saved Items</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-primary">Account Collections</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-6 pb-6 lg:pb-10 border-t border-[#F3F6FF]">
+      <div class="container">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-5">
+          <p class="text-[#A2A9B0] text-xs md:text-base">Copyright © 2023 Cubeicals. All rights reserved.</p>
+
+          <ul class="flex items-center gap-6">
+            <li>
+              <a href="#" class="text-[#A2A9B0] text-sm md:text-base underline transition-all duration-300 hover:text-primary">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="text-[#A2A9B0] text-sm md:text-base underline transition-all duration-300 hover:text-primary">Terms of Use</a>
+            </li>
+            <li>
+              <a href="#" class="text-[#A2A9B0] text-sm md:text-base underline transition-all duration-300 hover:text-primary">Legal</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- footer end -->
+
+  <!-- swiper -->
+  <script src="src/js/swiper-bundle.min.js"></script>
+  <script src="src/js/script.js"></script>
+</body>
+</html>
