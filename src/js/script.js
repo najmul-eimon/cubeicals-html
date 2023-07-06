@@ -1,4 +1,4 @@
-// banner slider
+ /*======================= blog banner slider ========================*/
 var blogBannerSwiper = new Swiper(".blog-banner-slider", {
   effect: 'fade',
   loop: false,
@@ -8,10 +8,11 @@ var blogBannerSwiper = new Swiper(".blog-banner-slider", {
   },
 });
 
+ /*======================= featured blog slider ========================*/
 var featuredBlogSwiper = new Swiper(".featured-blog-slider", {
   spaceBetween: 24,
   grabCursor: true,
-  centeredSlides: true,
+  centeredSlides: false,
   slidesPerView: 1,
   loop: true,
   autoplay: {
@@ -37,3 +38,42 @@ var featuredBlogSwiper = new Swiper(".featured-blog-slider", {
     }
   },
 });
+
+/*======================= latest blog tab filtering ========================*/
+$('.latest-post-btns button').on('click', function(){
+  $(this).parent().parent().find('button').removeClass('bg-primary text-white').addClass('text-primary');
+  $(this).addClass('bg-primary text-white').removeClass('text-primary');
+});
+
+var latestPostContainer = document.querySelector('#latest-post-container');
+if(latestPostContainer){
+  var mixer = mixitup(latestPostContainer);
+}
+
+/*======================= mobile-menu ========================*/
+$('.mobile-sub-list').slideUp();
+$('.mobile-menu-list button').on('click', function(){
+  $(this).parent().find('.mobile-sub-list').slideToggle();
+  $(this).toggleClass('!text-secondary');
+});
+
+$('.mobile-menu-toggle').on('click', function(){
+  $('.mobile-menu-wrapper').removeClass('opacity-0 invisible')
+  $('.mobile-menu').removeClass('translate-x-full').addClass('translate-x-0')
+});
+
+$('.mobile-menu-close, .mobile-menu-overlay').on('click', function(){
+  $('.mobile-menu').removeClass('translate-x-0').addClass('translate-x-full');
+  $('.mobile-menu-wrapper').addClass('opacity-0 invisible');
+  $('.mobile-sub-list').slideUp();
+  $('.mobile-menu-list button').removeClass('!text-secondary');
+});
+
+/*======================= video modal play ========================*/
+$('.video-play').on('click', function(){
+  $('.video-modal').removeClass('hidden').addClass('flex')
+})
+
+$('.modal-overlay, .modal-close').on('click', function(){
+  $('.video-modal').addClass('hidden').removeClass('flex')
+})

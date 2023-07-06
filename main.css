@@ -6,9 +6,14 @@
   font-family: 'SfProRegular';
   src: url('../src/fonts/sf-pro-text-regular.ttf');
 }
+
 @font-face {
   font-family: 'SfProBold';
   src: url('../src/fonts/sf-pro-text-bold.ttf');
+}
+
+header{
+  box-shadow: 0px 2px 6.400000095367432px -1px rgba(19, 16, 34, 0.03), 0px 4.400000095367432px 12px -1px rgba(19, 16, 34, 0.06);
 }
 
 .featured-blog-card{
@@ -28,5 +33,23 @@
   100% {
       transform: scale(1) translateX(-50%);
       opacity: 1;
+  }
+}
+
+.contact-us{
+  background: url('../src/images/contact-bg.png') no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-us{
+    background: url('../src/images/contact-bg-sm.png') no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .financial-banner img{
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
