@@ -53,3 +53,20 @@ header{
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
+
+.blog-service-slider .swiper-horizontal>.swiper-pagination-bullets, 
+.blog-service-slider .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: 0;
+}
+
+.blog-service-slider .swiper-pagination-bullet {
+  height: 5px;
+  width: 5px;
+  opacity: 1;
+  background: #BAC7CE;
+  @apply transition-all duration-300;
+}
+
+.blog-service-slider .swiper-pagination-bullet-active{
+  @apply w-9 bg-primary rounded-full;
+}

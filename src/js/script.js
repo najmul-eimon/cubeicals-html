@@ -8,7 +8,7 @@ var blogBannerSwiper = new Swiper(".blog-banner-slider", {
   },
 });
 
- /*======================= featured blog slider ========================*/
+/*======================= featured blog slider ========================*/
 var featuredBlogSwiper = new Swiper(".featured-blog-slider", {
   spaceBetween: 24,
   grabCursor: true,
@@ -77,3 +77,33 @@ $('.video-play').on('click', function(){
 $('.modal-overlay, .modal-close').on('click', function(){
   $('.video-modal').addClass('hidden').removeClass('flex')
 })
+
+ /*======================= blog service slider ========================*/
+ var blogServiceSwiper = new Swiper(".blog-service-slider", {
+  spaceBetween: 0,
+  centeredSlides: false,
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 2000
+  },
+  speed: 3000,
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1280: {
+      slidesPerView: 4,
+    }
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+});
