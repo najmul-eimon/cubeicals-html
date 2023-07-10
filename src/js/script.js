@@ -1,4 +1,4 @@
- /*======================= blog banner slider ========================*/
+/*======================= blog banner slider ========================*/
 var blogBannerSwiper = new Swiper(".blog-banner-slider", {
   effect: 'fade',
   loop: false,
@@ -78,7 +78,7 @@ $('.modal-overlay, .modal-close').on('click', function(){
   $('.video-modal').addClass('hidden').removeClass('flex')
 })
 
- /*======================= blog service slider ========================*/
+/*======================= blog service slider ========================*/
  var blogServiceSwiper = new Swiper(".blog-service-slider", {
   spaceBetween: 0,
   centeredSlides: false,
@@ -106,4 +106,20 @@ $('.modal-overlay, .modal-close').on('click', function(){
     el: ".swiper-pagination",
     clickable: true
   },
+});
+
+/*======================= saas-1 how-it-works tab ========================*/
+$('#how-works-tabs-nav li:first-child').addClass('active');
+$('.how-works-tab-content').hide();
+$('.how-works-tab-content:first').show();
+
+// Click function
+$('#how-works-tabs-nav li').click(function(){
+  $('#how-works-tabs-nav li').removeClass('active');
+  $(this).addClass('active');
+  $('.how-works-tab-content').hide();
+  
+  var activeTab = $(this).find('a').attr('href');
+  $(activeTab).fadeIn();
+  return false;
 });

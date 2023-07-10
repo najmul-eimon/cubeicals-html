@@ -62,11 +62,14 @@ header{
 .blog-service-slider .swiper-pagination-bullet {
   height: 5px;
   width: 5px;
-  opacity: 1;
   background: #BAC7CE;
-  @apply transition-all duration-300;
+  @apply transition-all duration-300 opacity-100;
 }
 
 .blog-service-slider .swiper-pagination-bullet-active{
   @apply w-9 bg-primary rounded-full;
+}
+
+.how-works ul li.active a{
+  box-shadow: 6px 0px 24px 0px rgba(37, 78, 117, 0.08), -6px 0px 24px 0px rgba(37, 78, 117, 0.08); 
 }
