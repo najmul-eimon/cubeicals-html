@@ -123,3 +123,46 @@ $('#how-works-tabs-nav li').click(function(){
   $(activeTab).fadeIn();
   return false;
 });
+
+/*======================= saas-2 dark-light mode ========================*/
+$('#dark-light-mode').anyImageComparisonSlider({
+  // cursor: "url('../src/images/saas/handle.cur') 0 0, auto",
+  cursor: 'ew-resize',
+  dividingLine: 'none',
+});
+
+/*======================= saas-3 client slider ========================*/
+var blogServiceSwiper = new Swiper(".saas-client-slider", {
+  spaceBetween: 48,
+  centeredSlides: false,
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 2000
+  },
+  speed: 3000,
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+    },
+    1199: {
+      slidesPerView: 1.5,
+    }
+  }
+});
+
+/*======================= saas-3 dark-light mode ========================*/
+$('.switch-check').on('click', function(){
+  if( $('#switch-check').is(':checked') ){
+    $('.dark-light-mode').removeClass('bg-gray-900').addClass('bg-[#F4F7FF]')
+    $('.dark-light-mode h2, .dark-light-mode h4').removeClass('text-white').addClass('text-gray-800')
+    $('.light-img').removeClass('hidden')
+    $('.dark-img').addClass('hidden')
+  }
+  else{
+    $('.dark-light-mode').addClass('bg-gray-900').removeClass('bg-[#F4F7FF]')
+    $('.dark-light-mode h2, .dark-light-mode h4').addClass('text-white').removeClass('text-gray-800')
+    $('.light-img').addClass('hidden')
+    $('.dark-img').removeClass('hidden')
+  }
+})

@@ -12,12 +12,10 @@
   src: url('../src/fonts/sf-pro-text-bold.ttf');
 }
 
+
+/*-------------------- header ----------------*/
 header{
   box-shadow: 0px 2px 6.400000095367432px -1px rgba(19, 16, 34, 0.03), 0px 4.400000095367432px 12px -1px rgba(19, 16, 34, 0.06);
-}
-
-.featured-blog-card{
-  box-shadow: 0px 4px 9px -1px rgba(19, 16, 34, 0.03), 0px 4.400000095367432px 20px -1px rgba(19, 16, 34, 0.05);
 }
 
 .menu-li:hover .megamenu{
@@ -36,6 +34,12 @@ header{
   }
 }
 
+/*-------------------- blog > featured-blog ----------------*/
+.featured-blog-card{
+  box-shadow: 0px 4px 9px -1px rgba(19, 16, 34, 0.03), 0px 4.400000095367432px 20px -1px rgba(19, 16, 34, 0.05);
+}
+
+/*-------------------- blog > contact-us ----------------*/
 .contact-us{
   background: url('../src/images/contact-bg.png') no-repeat center;
   background-size: cover;
@@ -48,12 +52,14 @@ header{
   }
 }
 
+/*-------------------- financial-consulting > banner ----------------*/
 @media screen and (min-width: 768px) {
   .financial-banner img{
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
 
+/*-------------------- financial-consulting > service ----------------*/
 .blog-service-slider .swiper-horizontal>.swiper-pagination-bullets, 
 .blog-service-slider .swiper-pagination-bullets.swiper-pagination-horizontal{
   bottom: 0;
@@ -72,4 +78,55 @@ header{
 
 .how-works ul li.active a{
   box-shadow: 6px 0px 24px 0px rgba(37, 78, 117, 0.08), -6px 0px 24px 0px rgba(37, 78, 117, 0.08); 
+}
+
+/*-------------------- saas2 > client ----------------*/
+.saas-client-slides{
+  box-shadow: -10px -6px 27px 0px rgba(128, 128, 128, 0.06), 10px 4px 23px 0px rgba(128, 128, 128, 0.08); 
+}
+
+.saas-client .swiper-slide{
+  opacity: 0.5;
+  transition: all linear 0.3s;
+}
+
+.saas-client .swiper-slide-active{
+  opacity: 1;
+  transform: scale(1.1)
+}
+
+.saas-client .swiper-slide-active > div{
+  @apply border-0;
+}
+
+/*-------------------- saas3 > dark-light-mode ----------------*/
+.dark-light-mode .slider:before {
+  content: "";
+  @apply absolute h-[27px] lg:h-9 w-[27px] lg:w-9 left-[2px] top-[2px] transition-all duration-300 rounded-full;
+  background: url('../src/images/saas/moon.png') no-repeat center;
+  background-size: cover;
+}
+
+.dark-light-mode .slider{
+  background: url('../src/images/saas/night.png') no-repeat center;
+  background-size: cover;
+}
+
+.dark-light-mode input:checked + .slider {
+  background: url('../src/images/saas/day.png') no-repeat center;
+}
+
+.dark-light-mode input:checked + .slider:before {
+  -webkit-transform: translateX(38px);
+  -ms-transform: translateX(38px);
+  transform: translateX(38px);
+  background: url('../src/images/saas/sun.png') no-repeat center;
+}
+
+@media screen and (max-width: 1023px) {
+    .dark-light-mode input:checked + .slider:before {
+    -webkit-transform: translateX(29px);
+    -ms-transform: translateX(29px);
+    transform: translateX(29px);
+  }
 }
