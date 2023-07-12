@@ -677,19 +677,14 @@ video {
   margin-right: auto;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-10 {
@@ -710,6 +705,10 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mt-14 {
@@ -943,6 +942,10 @@ video {
 
 .max-w-\[926px\] {
   max-width: 926px;
+}
+
+.max-w-\[608px\] {
+  max-width: 608px;
 }
 
 .flex-shrink-0 {
@@ -1346,6 +1349,10 @@ video {
   padding-bottom: 2px;
 }
 
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1386,6 +1393,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .pt-14 {
   padding-top: 3.5rem;
 }
@@ -1394,12 +1405,20 @@ video {
   padding-top: 0.5rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .pt-\[2px\] {
@@ -1428,12 +1447,21 @@ video {
   line-height: 2.25rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-\[28px\] {
   font-size: 28px;
 }
 
 .text-\[32px\] {
   font-size: 32px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .text-base {
@@ -1461,6 +1489,10 @@ video {
   line-height: 1rem;
 }
 
+.font-black {
+  font-weight: 900;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1469,8 +1501,20 @@ video {
   font-weight: 500;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.leading-\[38px\] {
+  line-height: 38px;
+}
+
+.leading-\[48px\] {
+  line-height: 48px;
 }
 
 .\!text-secondary {
@@ -1770,6 +1814,48 @@ header{
   }
 }
 
+/*-------------------- saas3 > pricing-card ----------------*/
+
+.pricing-card:hover{
+  box-shadow: 0px 4px 13px -2px rgba(19, 16, 34, 0.06), 0px 4.800000190734863px 24.399999618530273px -6px rgba(19, 16, 34, 0.10);
+}
+
+/*-------------------- mobile-app1 > banner ----------------*/
+
+@media screen and (max-width: 767px){
+  .mobile-app-banner1 .bg-area{
+    background: linear-gradient(to bottom, #17171F 78%, #fff 22%);
+  }
+}
+
+.animate-box-1{
+  animation: upDown 12s linear infinite;
+}
+
+.animate-box-2{
+  animation: downUp 12s linear infinite;
+}
+
+@keyframes upDown {
+  0%, 100%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(100px);
+  }
+}
+
+@keyframes downUp {
+  0%, 100%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(-100px);
+  }
+}
+
 .placeholder\:text-sm::-moz-placeholder {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1795,6 +1881,11 @@ header{
   border-color: rgb(228 93 97 / var(--tw-border-opacity));
 }
 
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 246 255 / var(--tw-bg-opacity));
+}
+
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
   color: rgb(228 93 97 / var(--tw-text-opacity));
@@ -1816,6 +1907,16 @@ header{
 
 .group:hover .group-hover\:h-12 {
   height: 3rem;
+}
+
+.group:hover .group-hover\:bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 78 117 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:opacity-100 {
@@ -1874,6 +1975,10 @@ header{
     grid-column: span 4 / span 4;
   }
 
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .md\:col-span-8 {
     grid-column: span 8 / span 8;
   }
@@ -1883,8 +1988,20 @@ header{
     margin-right: 0px;
   }
 
+  .md\:-mt-10 {
+    margin-top: -2.5rem;
+  }
+
   .md\:mb-6 {
     margin-bottom: 1.5rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:mt-16 {
+    margin-top: 4rem;
   }
 
   .md\:block {
@@ -1947,6 +2064,11 @@ header{
     --tw-space-y-reverse: 0;
     margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:bg-\[\#17171F\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(23 23 31 / var(--tw-bg-opacity));
   }
 
   .md\:p-6 {
@@ -2039,6 +2161,14 @@ header{
     grid-column: span 3 / span 3;
   }
 
+  .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -2059,6 +2189,10 @@ header{
 
   .lg\:ml-6 {
     margin-left: 1.5rem;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .lg\:mt-16 {
@@ -2125,6 +2259,10 @@ header{
     width: 2.25rem;
   }
 
+  .lg\:max-w-\[600px\] {
+    max-width: 600px;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2157,6 +2295,10 @@ header{
     gap: 2.5rem;
   }
 
+  .lg\:gap-4 {
+    gap: 1rem;
+  }
+
   .lg\:gap-6 {
     gap: 1.5rem;
   }
@@ -2171,6 +2313,11 @@ header{
 
   .lg\:p-6 {
     padding: 1.5rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .lg\:py-12 {
@@ -2201,12 +2348,20 @@ header{
     padding-bottom: 3rem;
   }
 
+  .lg\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
   .lg\:pr-9 {
     padding-right: 2.25rem;
   }
 
   .lg\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .lg\:pt-28 {
+    padding-top: 7rem;
   }
 
   .lg\:pt-4 {
@@ -2281,6 +2436,10 @@ header{
     position: absolute;
   }
 
+  .xl\:-mt-20 {
+    margin-top: -5rem;
+  }
+
   .xl\:mt-40 {
     margin-top: 10rem;
   }
@@ -2301,6 +2460,10 @@ header{
     width: auto;
   }
 
+  .xl\:max-w-\[696px\] {
+    max-width: 696px;
+  }
+
   .xl\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -2319,11 +2482,43 @@ header{
     line-height: 1;
   }
 
+  .xl\:leading-\[54px\] {
+    line-height: 54px;
+  }
+
   .xl\:leading-\[58px\] {
     line-height: 58px;
   }
 
   .xl\:leading-\[72px\] {
     line-height: 72px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:-mt-\[180px\] {
+    margin-top: -180px;
+  }
+
+  .\32xl\:mt-\[122px\] {
+    margin-top: 122px;
+  }
+
+  .\32xl\:w-\[650px\] {
+    width: 650px;
+  }
+
+  .\32xl\:text-\[62px\] {
+    font-size: 62px;
+  }
+
+  .\32xl\:leading-\[74px\] {
+    line-height: 74px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .\33xl\:w-\[700px\] {
+    width: 700px;
   }
 }

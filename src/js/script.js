@@ -152,7 +152,7 @@ var blogServiceSwiper = new Swiper(".saas-client-slider", {
 });
 
 /*======================= saas-3 dark-light mode ========================*/
-$('.switch-check').on('click', function(){
+$('#switch-check').on('click', function(){
   if( $('#switch-check').is(':checked') ){
     $('.dark-light-mode').removeClass('bg-gray-900').addClass('bg-[#F4F7FF]')
     $('.dark-light-mode h2, .dark-light-mode h4').removeClass('text-white').addClass('text-gray-800')

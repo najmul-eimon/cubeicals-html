@@ -130,3 +130,41 @@ header{
     transform: translateX(29px);
   }
 }
+
+/*-------------------- saas3 > pricing-card ----------------*/
+.pricing-card:hover{
+  box-shadow: 0px 4px 13px -2px rgba(19, 16, 34, 0.06), 0px 4.800000190734863px 24.399999618530273px -6px rgba(19, 16, 34, 0.10);
+}
+
+/*-------------------- mobile-app1 > banner ----------------*/
+@media screen and (max-width: 767px){
+  .mobile-app-banner1 .bg-area{
+    background: linear-gradient(to bottom, #17171F 78%, #fff 22%);
+  }
+}
+
+.animate-box-1{
+  animation: upDown 12s linear infinite;
+}
+
+.animate-box-2{
+  animation: downUp 12s linear infinite;
+}
+
+@keyframes upDown {
+  0%, 100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(100px);
+  }
+}
+
+@keyframes downUp {
+  0%, 100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-100px);
+  }
+}

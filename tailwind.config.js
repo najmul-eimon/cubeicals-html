@@ -4,12 +4,6 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["*", "./pages/*html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-    },
     fontFamily: {
       sans: ['SfProRegular', ...defaultTheme.fontFamily.sans],
       sfBold: ['SfProBold', ...defaultTheme.fontFamily.sans],
@@ -30,6 +24,9 @@ module.exports = {
       }
     },
     extend: {
+      screens: {
+        "3xl": "1600px"
+      },
       colors: {
         primary: "#254E75",
         "primary-800": "#266080",
