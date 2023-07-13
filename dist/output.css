@@ -652,6 +652,18 @@ video {
   top: calc(100% - 2px);
 }
 
+.-top-14 {
+  top: -3.5rem;
+}
+
+.-left-16 {
+  left: -4rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -670,6 +682,18 @@ video {
 
 .col-span-12 {
   grid-column: span 12 / span 12;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
 }
 
 .mx-auto {
@@ -729,6 +753,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .block {
@@ -924,6 +952,10 @@ video {
   max-width: 546px;
 }
 
+.max-w-\[608px\] {
+  max-width: 608px;
+}
+
 .max-w-\[636px\] {
   max-width: 636px;
 }
@@ -942,10 +974,6 @@ video {
 
 .max-w-\[926px\] {
   max-width: 926px;
-}
-
-.max-w-\[608px\] {
-  max-width: 608px;
 }
 
 .flex-shrink-0 {
@@ -999,6 +1027,10 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1132,6 +1164,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-t-2xl {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -1225,6 +1261,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-primary-900\/20 {
+  background-color: rgb(17 81 117 / 0.2);
 }
 
 .object-cover {
@@ -1349,6 +1389,16 @@ video {
   padding-bottom: 2px;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-\[14px\] {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1423,6 +1473,10 @@ video {
 
 .pt-\[2px\] {
   padding-top: 2px;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .text-left {
@@ -1604,6 +1658,12 @@ video {
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[0px_16px_40px_0px_rgba\(60\2c 111\2c 140\2c 0\.12\)\] {
+  --tw-shadow: 0px 16px 40px 0px rgba(60,111,140,0.12);
+  --tw-shadow-colored: 0px 16px 40px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1881,6 +1941,11 @@ header{
   border-color: rgb(228 93 97 / var(--tw-border-opacity));
 }
 
+.hover\:border-white:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 246 255 / var(--tw-bg-opacity));
@@ -1889,6 +1954,12 @@ header{
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
   color: rgb(228 93 97 / var(--tw-text-opacity));
+}
+
+.hover\:shadow-\[0px_16px_40px_0px_rgba\(60\2c 111\2c 140\2c 0\.12\)\]:hover {
+  --tw-shadow: 0px 16px 40px 0px rgba(60,111,140,0.12);
+  --tw-shadow-colored: 0px 16px 40px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .focus\:border-secondary:focus {
@@ -2169,6 +2240,10 @@ header{
     grid-column: span 7 / span 7;
   }
 
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -2279,6 +2354,10 @@ header{
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -2313,6 +2392,10 @@ header{
 
   .lg\:p-6 {
     padding: 1.5rem;
+  }
+
+  .lg\:p-4 {
+    padding: 1rem;
   }
 
   .lg\:px-8 {
@@ -2370,6 +2453,10 @@ header{
 
   .lg\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .lg\:pb-8 {
+    padding-bottom: 2rem;
   }
 
   .lg\:text-left {
@@ -2436,12 +2523,24 @@ header{
     position: absolute;
   }
 
+  .xl\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .xl\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .xl\:-mt-20 {
     margin-top: -5rem;
   }
 
   .xl\:mt-40 {
     margin-top: 10rem;
+  }
+
+  .xl\:mt-16 {
+    margin-top: 4rem;
   }
 
   .xl\:h-\[800px\] {
@@ -2464,9 +2563,18 @@ header{
     max-width: 696px;
   }
 
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .xl\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .xl\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .xl\:pb-20 {
