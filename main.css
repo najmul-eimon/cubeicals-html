@@ -136,7 +136,7 @@ header{
   box-shadow: 0px 4px 13px -2px rgba(19, 16, 34, 0.06), 0px 4.800000190734863px 24.399999618530273px -6px rgba(19, 16, 34, 0.10);
 }
 
-/*-------------------- mobile-app1 > banner ----------------*/
+/*-------------------- mobile-app-1 > banner ----------------*/
 @media screen and (max-width: 767px){
   .mobile-app-banner1 .bg-area{
     background: linear-gradient(to bottom, #17171F 78%, #fff 22%);
@@ -167,4 +167,67 @@ header{
   50%{
     transform: translateY(-100px);
   }
+}
+
+/*-------------------- mobile-app-1 > feature video ----------------*/
+.feature-video{
+  background: url('../src/images/mobile/video.png') no-repeat center;
+  background-size: cover;
+}
+
+@keyframes ripple {
+  0% {
+      opacity: 1;
+      -webkit-box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+      box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+  }
+
+  100% {
+      opacity: 0;
+      -webkit-box-shadow: 0 0 0 30px rgba(239, 68, 68, 0.4);
+      box-shadow: 0 0 0 30px rgba(239, 68, 68, 0.4);
+  }
+}
+
+.feature-video .video-play .video-icon::after {
+  content: '';
+  animation: ripple;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  @apply absolute top-0 left-0 h-full w-full rounded-full bg-transparent;
+}
+
+/*-------------------- mobile-app-1 > client slider ----------------*/
+.mobile-client-slider .swiper-slide-active > div{
+  box-shadow: 0px 24px 64px 0px rgba(0, 0, 0, 0.05);
+  border-color: #fff;
+}
+
+.mobile-client-slider .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background: #E8EFFF;
+  @apply transition-all duration-300 opacity-100;
+}
+
+.mobile-client-slider .swiper-pagination-bullet-active{
+  @apply bg-primary-900 rounded-full;
+}
+
+.mobile-client-slider .swiper-horizontal>.swiper-pagination-bullets, 
+.mobile-client-slider .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: -6px;
+}
+
+/*-------------------- mobile-app-1 > subscribe ----------------*/
+.subscribe .bg-area{
+  background: url('../src/images/mobile/subscribe.png') no-repeat center;
+  background-size: cover;
+}
+
+.brands .single-item{
+  box-shadow: 0px 2px 6.5px -1px rgba(19, 16, 34, 0.03), 0px 4.5px 12px -1px rgba(19, 16, 34, 0.06);
 }

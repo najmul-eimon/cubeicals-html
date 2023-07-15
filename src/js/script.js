@@ -1,4 +1,4 @@
-/*======================= blog banner slider ========================*/
+/*======================= blog > banner slider ========================*/
 var blogBannerSwiper = new Swiper(".blog-banner-slider", {
   effect: 'fade',
   loop: false,
@@ -8,7 +8,7 @@ var blogBannerSwiper = new Swiper(".blog-banner-slider", {
   },
 });
 
-/*======================= featured blog slider ========================*/
+/*======================= blog > featured blog slider ========================*/
 var featuredBlogSwiper = new Swiper(".featured-blog-slider", {
   spaceBetween: 24,
   grabCursor: true,
@@ -39,7 +39,7 @@ var featuredBlogSwiper = new Swiper(".featured-blog-slider", {
   },
 });
 
-/*======================= latest blog tab filtering ========================*/
+/*======================= blog > latest blog tab filtering ========================*/
 $('.latest-post-btns button').on('click', function(){
   $(this).parent().parent().find('button').removeClass('bg-primary text-white').addClass('text-primary');
   $(this).addClass('bg-primary text-white').removeClass('text-primary');
@@ -78,7 +78,7 @@ $('.modal-overlay, .modal-close').on('click', function(){
   $('.video-modal').addClass('hidden').removeClass('flex')
 })
 
-/*======================= blog service slider ========================*/
+/*======================= financial-consulting >  service slider ========================*/
  var blogServiceSwiper = new Swiper(".blog-service-slider", {
   spaceBetween: 0,
   centeredSlides: false,
@@ -108,7 +108,7 @@ $('.modal-overlay, .modal-close').on('click', function(){
   },
 });
 
-/*======================= saas-1 how-it-works tab ========================*/
+/*======================= saas-1 > how-it-works tab ========================*/
 $('#how-works-tabs-nav li:first-child').addClass('active');
 $('.how-works-tab-content').hide();
 $('.how-works-tab-content:first').show();
@@ -124,14 +124,14 @@ $('#how-works-tabs-nav li').click(function(){
   return false;
 });
 
-/*======================= saas-2 dark-light mode ========================*/
+/*======================= saas-2 > dark-light mode ========================*/
 $('#dark-light-mode').anyImageComparisonSlider({
   // cursor: "url('../src/images/saas/handle.cur') 0 0, auto",
   cursor: 'ew-resize',
   dividingLine: 'none',
 });
 
-/*======================= saas-3 client slider ========================*/
+/*======================= saas-3 > client slider ========================*/
 var blogServiceSwiper = new Swiper(".saas-client-slider", {
   spaceBetween: 48,
   centeredSlides: false,
@@ -151,7 +151,7 @@ var blogServiceSwiper = new Swiper(".saas-client-slider", {
   }
 });
 
-/*======================= saas-3 dark-light mode ========================*/
+/*======================= saas-3 > dark-light mode ========================*/
 $('#switch-check').on('click', function(){
   if( $('#switch-check').is(':checked') ){
     $('.dark-light-mode').removeClass('bg-gray-900').addClass('bg-[#F4F7FF]')
@@ -164,5 +164,66 @@ $('#switch-check').on('click', function(){
     $('.dark-light-mode h2, .dark-light-mode h4').addClass('text-white').removeClass('text-gray-800')
     $('.light-img').addClass('hidden')
     $('.dark-img').removeClass('hidden')
+  }
+})
+
+/*======================= mobile-app-1 > client slider ========================*/
+var blogServiceSwiper = new Swiper(".mobile-client-slider", {
+  spaceBetween: 24,
+  centeredSlides: true,
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 2000
+  },
+  speed: 3000,
+  breakpoints: {
+    576: {
+      slidesPerView: 1.5,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+});
+
+/*======================= mobile-app1 > faq tab ========================*/
+$('#faq-tabs-nav li:first-child a').addClass('font-bold text-primary-900').removeClass('text-gray-600');
+$('.faq-tab-content').hide();
+$('.faq-tab-content:first').show();
+
+// Click function
+$('#faq-tabs-nav li').click(function(){
+  $('#faq-tabs-nav li a').removeClass('font-bold text-primary-900').addClass('text-gray-600');
+  $(this).find('a').addClass('font-bold text-primary-900').removeClass('text-gray-600');
+  $('.faq-tab-content').hide();
+  
+  var activeTab = $(this).find('a').attr('href');
+  $(activeTab).fadeIn();
+  return false;
+});
+
+/*======================= mobile-app1 > faq accordion ========================*/
+$('.accordion-body').slideUp()
+$('.accordion-head').on('click', function(){
+  if($(this).parent().hasClass('active')){
+    $(this).parent().removeClass('active')
+    $(this).parent().find('.accordion-body').slideUp()
+    $(this).find('i').removeClass('rotate-180')
+  }
+  else{
+    $(this).parent().parent().find('.accordion').removeClass('active')
+    $(this).parent().parent().find('.accordion-body').slideUp()
+    $(this).parent().parent().find('i').removeClass('rotate-180')
+    $(this).parent().addClass('active')
+    $(this).parent().find('.accordion-body').slideDown()
+    $(this).find('i').addClass('rotate-180')
   }
 })
