@@ -194,7 +194,7 @@ var blogServiceSwiper = new Swiper(".mobile-client-slider", {
   },
 });
 
-/*======================= mobile-app1 > faq tab ========================*/
+/*======================= mobile-app-1 > faq tab ========================*/
 $('#faq-tabs-nav li:first-child a').addClass('font-bold text-primary-900').removeClass('text-gray-600');
 $('.faq-tab-content').hide();
 $('.faq-tab-content:first').show();
@@ -210,7 +210,7 @@ $('#faq-tabs-nav li').click(function(){
   return false;
 });
 
-/*======================= mobile-app1 > faq accordion ========================*/
+/*======================= mobile-app-1 > faq accordion ========================*/
 $('.accordion-body').slideUp()
 $('.accordion-head').on('click', function(){
   if($(this).parent().hasClass('active')){

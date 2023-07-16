@@ -812,6 +812,10 @@ video {
   height: 4rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -822,10 +826,6 @@ video {
 
 .h-9 {
   height: 2.25rem;
-}
-
-.h-\[100px\] {
-  height: 100px;
 }
 
 .h-\[220px\] {
@@ -875,10 +875,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-20 {
-  height: 5rem;
 }
 
 .min-h-\[600px\] {
@@ -1069,10 +1065,6 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1923,7 +1915,7 @@ header{
   box-shadow: 6px 0px 24px 0px rgba(37, 78, 117, 0.08), -6px 0px 24px 0px rgba(37, 78, 117, 0.08);
 }
 
-/*-------------------- saas2 > client ----------------*/
+/*-------------------- saas-2 > client ----------------*/
 
 .saas-client-slides{
   box-shadow: -10px -6px 27px 0px rgba(128, 128, 128, 0.06), 10px 4px 23px 0px rgba(128, 128, 128, 0.08);
@@ -1943,7 +1935,7 @@ header{
   border-width: 0px;
 }
 
-/*-------------------- saas3 > dark-light-mode ----------------*/
+/*-------------------- saas-3 > dark-light-mode ----------------*/
 
 .dark-light-mode .slider:before {
   content: "";
@@ -1990,7 +1982,7 @@ header{
   }
 }
 
-/*-------------------- saas3 > pricing-card ----------------*/
+/*-------------------- saas-3 > pricing-card ----------------*/
 
 .pricing-card:hover{
   box-shadow: 0px 4px 13px -2px rgba(19, 16, 34, 0.06), 0px 4.800000190734863px 24.399999618530273px -6px rgba(19, 16, 34, 0.10);
@@ -2529,16 +2521,16 @@ header{
     height: 2.25rem;
   }
 
+  .lg\:h-\[100px\] {
+    height: 100px;
+  }
+
   .lg\:h-\[600px\] {
     height: 600px;
   }
 
   .lg\:h-auto {
     height: auto;
-  }
-
-  .lg\:h-\[100px\] {
-    height: 100px;
   }
 
   .lg\:w-1\/2 {
