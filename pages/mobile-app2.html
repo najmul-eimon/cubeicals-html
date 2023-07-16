@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cubeicals | Mobile App Showcase Version 2</title>
+
+  <!-- phosphor icon -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <link rel="shortcut icon" href="../src/images/favicon.png" type="image/x-icon">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="../src/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="sticky w-full top-0 z-40 bg-white">
+    <div class="container">
+      <!-- desktop -->
+      <div class="hidden lg:flex items-center gap-2 justify-between relative">
+        <!-- logo -->
+        <a href="../index.html" class="inline-block py-3">
+          <img src="../src/images/logo.png" alt="">
+        </a>
+
+        <!-- menu -->
+        <ul class="flex items-center gap-6">
+          <li class="py-5 cursor-pointer group menu-li">
+            <button type="button" class="text-base font-medium text-gray-600 flex items-center gap-1">
+              Landings
+              <i class="ph ph-caret-down"></i>
+            </button>
+
+            <div class="megamenu flex justify-between w-[670px] absolute left-1/2 -translate-x-1/2 top-[calc(100%-2px)] bg-white z-20 border border-gray-300 rounded-[10px] overflow-hidden transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+              <ul class="space-y-6 p-6">
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Mobile App Showcase v.1</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Mobile App Showcase v.2</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">SaaS v.1</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">SaaS v.2</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">SaaS v.3</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Financial Consulting</a>
+                </li>
+              </ul>
+              <ul class="space-y-6 p-6">
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Medical</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">IT Company</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Conference</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Digital Agency</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Blog Homepage</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Online Courses</a>
+                </li>
+              </ul>
+
+              <div class="w-64 flex-shrink-0">
+                <img src="../src/images/megamenu.png" alt="" class="h-full w-full object-cover">
+              </div>
+            </div>
+          </li>
+          <li class="py-5 cursor-pointer group menu-li">
+            <button type="button" class="text-base font-medium text-gray-600 flex items-center gap-1">
+              Blog
+              <i class="ph ph-caret-down"></i>
+            </button>
+
+            <div class="megamenu flex justify-between w-[670px] absolute left-1/2 -translate-x-1/2 top-[calc(100%-2px)] bg-white z-20 border border-gray-300 rounded-[10px] overflow-hidden transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+              <ul class="space-y-6 p-6">
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Single Post</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Simple Feed</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Grid View no Sidebar</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">List View no Sidebar</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">List View with Sidebar</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Grid View with Sidebar</a>
+                </li>
+              </ul>
+
+              <div class="w-64 flex-shrink-0">
+                <img src="../src/images/megamenu.png" alt="" class="h-full w-full object-cover">
+              </div>
+            </div>
+          </li>
+          <li class="py-5 cursor-pointer group menu-li">
+            <button type="button" class="text-base font-medium text-gray-600 flex items-center gap-1">
+              Pages
+              <i class="ph ph-caret-down"></i>
+            </button>
+
+            <div class="megamenu flex justify-between w-[670px] absolute left-1/2 -translate-x-1/2 top-[calc(100%-2px)] bg-white z-20 border border-gray-300 rounded-[10px] overflow-hidden transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+              <div class="space-y-6 p-6">
+                <div>
+                  <h5 class="pb-6 text-sm font-bold text-gray-900">Error page</h5>
+                  <ul class="space-y-6">
+                    <li>
+                      <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">404 v.1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">404 v.2</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="pb-6 text-sm font-bold text-gray-900">About Us</h5>
+                  <ul class="space-y-6">
+                    <li>
+                      <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">About Us v.1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">About Us v.2</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="pb-6 text-sm font-bold text-gray-900">Portfolio</h5>
+                <ul class="space-y-6">
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Portfolio Grid View</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Portfolio List View</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Portfolio Slider View</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Project Details</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Single Project</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="p-6">
+                <h5 class="pb-6 text-sm font-bold text-gray-900">Pricing</h5>
+                <ul class="space-y-6">
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Contact v.1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Contact v.2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Grid View with Sidebar</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="py-5 cursor-pointer group menu-li">
+            <button type="button" class="text-base font-medium text-gray-600 flex items-center gap-1">
+              Accounts
+              <i class="ph ph-caret-down"></i>
+            </button>
+
+            <div class="megamenu flex justify-between w-[670px] absolute left-1/2 -translate-x-1/2 top-[calc(100%-2px)] bg-white z-20 border border-gray-300 rounded-[10px] overflow-hidden transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+              <div class="p-6">
+                <h5 class="pb-6 text-sm font-bold text-gray-900">Accounts</h5>
+                <ul class="space-y-6">
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Contact v.1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Contact v.2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">List View no Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">List View with Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Grid View with Sidebar</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="w-64 flex-shrink-0">
+                <img src="../src/images/megamenu.png" alt="" class="h-full w-full object-cover">
+              </div>
+            </div>
+          </li>
+          <li class="py-5 cursor-pointer group menu-li">
+            <button type="button" class="text-base font-medium text-gray-600 flex items-center gap-1">
+              Services
+              <i class="ph ph-caret-down"></i>
+            </button>
+
+            <div class="megamenu flex justify-between w-[670px] absolute left-1/2 -translate-x-1/2 top-[calc(100%-2px)] bg-white z-20 border border-gray-300 rounded-[10px] overflow-hidden transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+              <div class="p-6">
+                <h5 class="pb-6 text-sm font-bold text-gray-900">Services</h5>
+                <ul class="space-y-6">
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Services v.1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Services v.2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Services Details v.1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700 transition-all duration-300 hover:text-secondary">Services Details v.1</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="w-64 flex-shrink-0">
+                <img src="../src/images/megamenu.png" alt="" class="h-full w-full object-cover">
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- buttons -->
+        <ul class="flex items-center gap-2">
+          <li>
+            <a href="#" class="inline-block text-sm font-medium text-secondary border border-secondary py-2 px-5 rounded-lg">Sign in</a>
+          </li>
+          <li>
+            <a href="#" class="inline-block text-sm font-medium text-white border border-secondary bg-secondary py-2 px-5 rounded-lg">Sign up</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- mobile -->
+      <div class="flex lg:hidden items-center justify-between">
+        <!-- logo -->
+        <a href="../index.html" class="inline-block py-3">
+          <img src="../src/images/logo.png" alt="">
+        </a>
+
+        <!-- menu toggle button -->
+        <button type="button" class="mobile-menu-toggle rounded h-10 w-10 flex items-center justify-center bg-[#F5F5F5]">
+          <img src="../src/images/icons/hambergermenu.svg" alt="">
+        </button>
+      </div>
+    </div>
+
+    <!-- mobile-menu -->
+    <div class="mobile-menu-wrapper h-screen w-screen fixed inset-0 z-50 items-center justify-center transition-all duration-300 opacity-0 invisible lg:hidden">
+      <div class="bg-black/50 h-screen w-screen absolute inset-0 z-10 mobile-menu-overlay"></div>
+      <div class="max-w-[400px] w-full bg-white h-screen absolute top-0 right-0 translate-x-full z-20 shadow-xl overflow-y-auto transition-all duration-300 mobile-menu">
+        <div class="flex items-center justify-between py-3 px-4 bg-white border-b border-gray-300 sticky top-0 w-full z-20">
+          <a href="#">
+            <img src="../src/images/logo.png" alt="" class="w-full">
+          </a>
+
+          <button type="button" class="mobile-menu-close h-8 lg:h-10 w-8 lg:w-10 rounded-full bg-secondary flex items-center justify-center absolute top-4 right-4 z-10">
+            <i class="ph ph-x text-lg text-white"></i>
+          </button>
+        </div>
+
+        <ul class="p-6 space-y-6 mobile-menu-list">
+          <li>
+            <button type="button" class="text-base font-semibold text-gray-900 flex items-center gap-1 w-full">
+              Landings
+              <i class="ph ph-caret-down"></i>
+            </button>
+            <ul class="space-y-3 pl-6 mt-4 border-l border-gray-300 mobile-sub-list">
+              <li>
+                <a href="#" class="text-sm text-gray-700">Mobile App Showcase v.1</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Mobile App Showcase v.2</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">SaaS v.1</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">SaaS v.2</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">SaaS v.3</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Financial Consulting</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Medical</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">IT Company</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Conference</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Digital Agency</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Blog Homepage</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Online Courses</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="button" class="text-base font-semibold text-gray-900 flex items-center gap-1">
+              Blog
+              <i class="ph ph-caret-down"></i>
+            </button>
+            <ul class="space-y-3 pl-6 mt-4 border-l border-gray-300 mobile-sub-list">
+              <li>
+                <a href="#" class="text-sm text-gray-700">Single Post</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Simple Feed</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Grid View no Sidebar</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">List View no Sidebar</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">List View with Sidebar</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Grid View with Sidebar</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="button" class="text-base font-semibold text-gray-900 flex items-center gap-1">
+              Pages
+              <i class="ph ph-caret-down"></i>
+            </button>            
+            <ul class="space-y-3 pl-6 mt-4 border-l border-gray-300 mobile-sub-list">
+              <li>
+                <h5 class="text-sm font-semibold text-gray-900">Error page</h5>
+                <ul class="space-y-4 pt-4">
+                  <li>
+                    <a href="#" class="text-sm text-gray-700">404 v.1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700">404 v.2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h5 class="text-sm font-semibold text-gray-900">About Us</h5>
+                <ul class="space-y-3 pt-4">
+                  <li>
+                    <a href="#" class="text-sm text-gray-700">About Us v.1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700">About Us v.2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h5 class="text-sm font-semibold text-gray-900">Portfolio</h5>
+                <ul class="space-y-3 pt-4">
+                  <li>
+                    <a href="#" class="text-sm text-gray-700">Portfolio Grid View</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700">Portfolio List View</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700">Portfolio Slider View</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700">Project Details</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700">Single Project</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h5 class="text-sm font-semibold text-gray-900">Pricing</h5>
+                <ul class="space-y-3 pt-4">
+                  <li>
+                    <a href="#" class="text-sm text-gray-700">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700">Contact v.1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700">Contact v.2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-700">Grid View with Sidebar</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="button" class="text-base font-semibold text-gray-900 flex items-center gap-1">
+              Accounts
+              <i class="ph ph-caret-down"></i>
+            </button>
+            <ul class="space-y-3 pl-6 mt-4 border-l border-gray-300 mobile-sub-list">
+              <li>
+                <a href="#" class="text-sm text-gray-700">Contact v.1</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Contact v.2</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">List View no Sidebar</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">List View with Sidebar</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Grid View with Sidebar</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="button" class="text-base font-semibold text-gray-900 flex items-center gap-1">
+              Services
+              <i class="ph ph-caret-down"></i>
+            </button>
+            <ul class="space-y-3 pl-6 mt-4 border-l border-gray-300 mobile-sub-list">
+              <li>
+                <a href="#" class="text-sm text-gray-700">Services v.1</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Services v.2</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Services Details v.1</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-700">Services Details v.1</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- main start -->
+  <main>
+    <!-- banner start -->
+    <section class="mobile-app-banner pt-9 lg:pt-32 relative">
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div class="text-center lg:text-left">
+            <a href="#" class="inline-block text-sm lg:text-base text-white font-semibold px-3 lg:px-4 py-2 rounded-lg bg-gradient-to-r from-[#FFAD01] to-[#FFC602]/0">
+              Learning more about. <span class="uppercase underline">PEOPLED</span>
+            </a>
+            <h1 class="text-[32px] lg:text-5xl lg:leading-[64px] xl:text-[64px] xl:leading-[96px] text-white font-extrabold font-sfBold pt-8 md:pt-4 xl:pt-0">Changing: Transformasi</h1>
+            <h2 class="font-bold font-sfBold text-white text-base lg:text-4xl xl:text-5xl pt-3 lg:pt-2 pb-8 lg:pb-4">People can talking </h2>
+            <p class="text-sm lg:text-base text-white pb-8 lg:pb-11">At egestas volutpat dolor, tincidunt. Hac varius aenean non lacus. Egestas amet, elementum neque massa donec urna eget. Nulla felis facilisis eu justo, mattis id. In ultricies nam commodo pulvinar velit elit. </p>
+            <ul class="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-7">
+              <li>
+                <a href="#" class="flex items-center gap-3 px-5 xl:px-8 py-2 xl:py-[14px] text-sm xl:text-base font-sfBold font-extrabold rounded-full text-[#2F7D96] bg-white">
+                  <i class="ph-fill ph-video-camera text-2xl"></i>
+                  Call new Meeting
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center gap-3 py-2 xl:py-[14px] text-sm xl:text-base font-sfBold font-extrabold rounded-full text-white">
+                  History Call Record
+                  <i class="ph-bold ph-clock-counter-clockwise text-2xl"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <img src="../src/images/banner/mobile-banner-1.png" alt="" class="mx-auto relative z-20">
+          </div>
+        </div>
+      </div>
+
+      <img src="../src/images/mobile/wave.png" alt="" class="absolute bottom-2 left-0 z-20 hidden lg:block">
+    </section>
+    <!-- banner end -->
+
+    <!-- quick-view start -->
+    <section class="pt-60 lg:pt-28 pb-10 xl:py-14 -mt-40 lg:-mt-20 xl:-mt-16 bg-[#F5F6F8] relative z-10">
+      <div class="container">
+        <div class="grid grid-cols-4 gap-10 lg:gap-6 border-b border-light-gray lg:border-0 pb-8 lg:pb-0">
+          <div class="col-span-4 sm:col-span-2 xl:col-span-1 flex gap-5 items-start lg:border-b border-light-gray lg:pb-8 xl:pb-10">
+            <img src="../src/images/icons/cube.svg" alt="">
+            <div>
+              <h4 class="text-base font-bold font-sfBold text-gray-900">80, 420. 00</h4>
+              <p class="text-sm text-dark-gray pt-2">Vestibulum dignissim et vel et.</p>
+            </div>
+          </div>
+          <div class="col-span-4 sm:col-span-2 xl:col-span-1 flex gap-5 items-start lg:border-b border-light-gray lg:pb-8 xl:pb-10">
+            <img src="../src/images/icons/dice.svg" alt="">
+            <div>
+              <h4 class="text-base font-bold font-sfBold text-gray-900">Verified on business</h4>
+              <p class="text-sm text-dark-gray pt-2">Pellentesque sollicitudin dolor.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 mt-8 xl:mt-10">
+          <div class="flex items-start gap-4">
+            <div class="h-10 w-10 relative shrink-0">
+              <img src="../src/images/avatar/avatar-14.png" alt="" class="w-full h-full object-cover rounded-full">
+              <span class="block h-3 w-3 rounded-full bg-[#22C55E] border border-white absolute bottom-0 right-0 z-10"></span>
+            </div>
+            <div>
+              <h4 class="text-base font-semibold text-gray-900">Testimoni from @Abramam</h4>
+              <p class="pt-2 text-sm text-dark-gray">Sociis vitae sem orci, ultrices tincidunt in. Scelerisque semper et in eget sed pretium cum. Donec luctus dolor senectus magna id sit.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="h-10 w-10 relative shrink-0">
+              <img src="../src/images/avatar/avatar-13.png" alt="" class="w-full h-full object-cover rounded-full">
+              <span class="block h-3 w-3 rounded-full bg-[#22C55E] border border-white absolute bottom-0 right-0 z-10"></span>
+            </div>
+            <div>
+              <h4 class="text-base font-semibold text-gray-900">Testimoni from @Monata</h4>
+              <p class="pt-2 text-sm text-dark-gray">Tincidunt et eros fermentum commodo orci. Tortor venenatis mus mi nunc. Et habitant purus quis nulla pretium, leo euismod. Ac libero.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- quick-view end -->
+
+    <!-- call start -->
+    <section class="py-10 lg:py-16">
+      <div class="container">
+        <ul class="flex items-center justify-between gap-3 w-full overflow-x-auto py-1 mb-6 lg:mb-10 xl:mb-20">
+          <li>
+            <a href="#" class="inline-block whitespace-nowrap px-4 lg:px-5 py-2 lg:py-[10px] text-sm lg:text-base font-medium text-dark-gray rounded-full border border-light-gray shadow-[0px_1px_3px_0px_rgba(0,0,0,0.25)]">United State</a>
+          </li>
+          <li>
+            <a href="#" class="inline-block whitespace-nowrap px-4 lg:px-5 py-2 lg:py-[10px] text-sm lg:text-base font-medium text-dark-gray rounded-full border border-light-gray shadow-[0px_1px_3px_0px_rgba(0,0,0,0.25)]">Germany</a>
+          </li>
+          <li>
+            <a href="#" class="inline-block whitespace-nowrap px-4 lg:px-5 py-2 lg:py-[10px] text-sm lg:text-base font-medium text-dark-gray rounded-full border border-light-gray shadow-[0px_1px_3px_0px_rgba(0,0,0,0.25)]">China</a>
+          </li>
+          <li>
+            <a href="#" class="inline-block whitespace-nowrap px-4 lg:px-5 py-2 lg:py-[10px] text-sm lg:text-base font-medium text-dark-gray rounded-full border border-light-gray shadow-[0px_1px_3px_0px_rgba(0,0,0,0.25)]">Australia</a>
+          </li>
+          <li>
+            <a href="#" class="inline-block whitespace-nowrap px-4 lg:px-5 py-2 lg:py-[10px] text-sm lg:text-base font-medium text-dark-gray rounded-full border border-light-gray shadow-[0px_1px_3px_0px_rgba(0,0,0,0.25)]">Spain</a>
+          </li>
+          <li>
+            <a href="#" class="inline-block whitespace-nowrap px-4 lg:px-5 py-2 lg:py-[10px] text-sm lg:text-base font-medium text-dark-gray rounded-full border border-light-gray shadow-[0px_1px_3px_0px_rgba(0,0,0,0.25)]">Brazil</a>
+          </li>
+          <li>
+            <a href="#" class="inline-block whitespace-nowrap px-4 lg:px-5 py-2 lg:py-[10px] text-sm lg:text-base font-medium text-dark-gray rounded-full border border-light-gray shadow-[0px_1px_3px_0px_rgba(0,0,0,0.25)]">Cameroon</a>
+          </li>
+          <li>
+            <a href="#" class="inline-block whitespace-nowrap px-4 lg:px-5 py-2 lg:py-[10px] text-sm lg:text-base font-medium text-dark-gray rounded-full border border-light-gray shadow-[0px_1px_3px_0px_rgba(0,0,0,0.25)]">South Africa</a>
+          </li>
+        </ul>
+
+        <h3 class="text-2xl lg:text-3xl xl:text-5xl font-bold font-sfBold text-gray-900 pb-6">Understanding Your Need Call</h3>
+        <p class="text-sm lg:text-base text-dark-gray pb-4 lg:pb-5">Quis laoreet et risus, dignissim enim purus, tincidunt dolor gravida. Massa est nisi metus fermentum blandit. Eu amet viverra pellentesque tellus ut. Etiam lectus nunc eget nec, aliquam molestie tristique netus. Mauris bibendum tortor ultrices purus tincidunt. </p>
+        <p class="text-sm lg:text-base text-dark-gray">Mollis lacus tellus vitae sed ut tellus egestas. Venenatis porttitor tellus sapien feugiat convallis adipiscing tincidunt pretium. Pretium turpis magna volutpat nisi et suscipit quis. Sagittis dictum at nibh tellus. Netus suspendisse a, augue vel aliquet pellentesque aliquam. Faucibus at platea mi gravida amet. Tortor augue lobortis arcu sed faucibus laoreet. Vulputate magna faucibus sit tristique enim lectus ac amet egestas.</p>
+      </div>
+    </section>
+    <!-- call end -->
+
+    <!-- about start -->
+    <section class="py-10 lg:py-16">
+      <div class="container relative">
+        <!-- bg-circle -->
+        <div class="w-[215px] lg:w-[460px] h-[215px] lg:h-[460px] bg-gradient-to-b from-[#FDAE09] via-[#EFBF18]/50 to-[#FFC602]/0 rounded-full blur-[2px] absolute -top-10 lg:top-[9%] right-[30%] lg:right-[15%] -z-[1]"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- item 1 -->
+          <div>
+            <div class="rounded-[20px] lg:rounded-[32px] overflow-hidden bg-primary-alt p-2 lg:p-3">
+              <img src="../src/images/mobile/indo.png" alt="" class="rounded-[20px] lg:rounded-3xl w-full">
+              <div class="p-2 lg:p-3">
+                <p class="text-[10px] lg:text-xs font-semibold lg:font-bold lg:font-sfBold text-[#FFB74D] flex items-center gap-2">
+                  <span class="inline-block h-2 w-2 rounded-full bg-white border border-[#333333] outline outline-[#FFB74D]"></span>
+                  Online - 24 minutes
+                </p>
+                <div class="flex items-center justify-between mt-[10px] lg:mt-3">
+                  <div>
+                    <h3 class="text-sm lg:text-xl font-bold font-sfBold text-white">Eleanor Pena</h3>
+                    <h4 class="text-xs lg:text-base text-white/60 pt-1 lg:pt-2">Learning and Development</h4>
+                  </div>
+                  <a href="#">
+                    <img src="../src/images/icons/chat.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center w-full gap-4 py-3 lg:py-[18px] rounded-full bg-[#333333] mt-3 lg:mt-4">
+              <img src="../src/images/icons/microphone.svg" alt="">
+              <p class="text-sm lg:text-xl text-white">Call From <span class="font-medium">Indonesian</span></p>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="lg:mt-32">
+            <div class="rounded-[20px] lg:rounded-[32px] overflow-hidden bg-primary-alt p-2 lg:p-3">
+              <img src="../src/images/mobile/german.png" alt="" class="rounded-[20px] lg:rounded-3xl w-full">
+              <div class="p-2 lg:p-3">
+                <p class="text-[10px] lg:text-xs font-semibold lg:font-bold lg:font-sfBold text-[#FFB74D] flex items-center gap-2">
+                  <span class="inline-block h-2 w-2 rounded-full bg-white border border-[#333333] outline outline-[#FFB74D]"></span>
+                  Online - 24 minutes
+                </p>
+                <div class="flex items-center justify-between mt-[10px] lg:mt-3">
+                  <div>
+                    <h3 class="text-sm lg:text-xl font-bold font-sfBold text-white">Eleanor Pena</h3>
+                    <h4 class="text-xs lg:text-base text-white/60 pt-1 lg:pt-2">Learning and Development</h4>
+                  </div>
+                  <a href="#">
+                    <img src="../src/images/icons/chat.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center w-full gap-4 py-3 lg:py-[18px] rounded-full bg-[#333333] mt-3 lg:mt-4">
+              <img src="../src/images/icons/microphone.svg" alt="">
+              <p class="text-sm lg:text-xl text-white">Call From <span class="font-medium">German</span></p>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="lg:mt-64">
+            <div class="rounded-[20px] lg:rounded-[32px] overflow-hidden bg-primary-alt p-2 lg:p-3">
+              <img src="../src/images/mobile/aus.png" alt="" class="rounded-[20px] lg:rounded-3xl w-full">
+              <div class="p-2 lg:p-3">
+                <p class="text-[10px] lg:text-xs font-semibold lg:font-bold lg:font-sfBold text-[#FFB74D] flex items-center gap-2">
+                  <span class="inline-block h-2 w-2 rounded-full bg-white border border-[#333333] outline outline-[#FFB74D]"></span>
+                  Online - 24 minutes
+                </p>
+                <div class="flex items-center justify-between mt-[10px] lg:mt-3">
+                  <div>
+                    <h3 class="text-sm lg:text-xl font-bold font-sfBold text-white">Eleanor Pena</h3>
+                    <h4 class="text-xs lg:text-base text-white/60 pt-1 lg:pt-2">Learning and Development</h4>
+                  </div>
+                  <a href="#">
+                    <img src="../src/images/icons/chat.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center w-full gap-4 py-3 lg:py-[18px] rounded-full bg-[#333333] mt-3 lg:mt-4">
+              <img src="../src/images/icons/microphone.svg" alt="">
+              <p class="text-sm lg:text-xl text-white">Call From <span class="font-medium">Australia</span></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- device start -->
+    <section class="py-10 lg:py-16">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-6 items-center">
+          <div class="col-span-12 lg:col-span-6 xl:col-span-5">
+            <img src="../src/images/mobile/device.png" alt="" class="mx-auto lg:mx-0">
+          </div>
+
+          <div class="col-span-12 lg:col-span-6 xl:col-span-7">
+            <h2 class="text-[32px] lg:text-3xl xl:text-5xl font-sfBold font-extrabold text-gray-900 pb-6">Another Device Using</h2>
+            <p class="text-sm lg:text-base text-dark-gray pb-2">Suspendisse libero, orci nec commodo. Placerat pulvinar ullamcorper erat a, pharetra. Cursus posuere porttitor pellentesque posuere mauris ac. Ut fringilla id sapien risus duis fusce sit in. Lobortis feugiat eget dapibus at eu euismod. Morbi purus quam.</p>
+            <p class="text-sm lg:text-base text-dark-gray pb-4 lg:pb-10">Senectus amet quis euismod a. Scelerisque duis bibendum est tellus, blandit ut tortor pharetra. Amet sagittis a leo eros vitae. Pretium at placerat volutpat ornare pellentesque dolor sagittis. Ullamcorper molestie quam cras viverra malesuada.</p>
+            <ul class="flex items-center gap-y-4 gap-x-[10px] flex-wrap">
+              <li class="flex items-center gap-3 py-2 px-6 rounded-full text-white text-base bg-primary-alt">
+                <img src="../src/images/icons/spray-can.svg" alt="" class="shrink-0">
+                Senectus amet
+              </li>
+              <li class="flex items-center gap-3 py-2 px-6 rounded-full text-white text-base bg-primary-alt">
+                <img src="../src/images/icons/band-aid.svg" alt="" class="shrink-0">
+                Augue aliquet nulla.
+              </li>
+              <li class="flex items-center gap-3 py-2 px-6 rounded-full text-white text-base bg-primary-alt">
+                <img src="../src/images/icons/s.svg" alt="" class="shrink-0">
+                Purus purus in quam.
+              </li>
+              <li class="flex items-center gap-3 py-2 px-6 rounded-full text-white text-base bg-primary-alt">
+                <img src="../src/images/icons/satellite-dish.svg" alt="" class="shrink-0">
+                Diam aliquam viverra.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- device end -->
+
+    <!-- enjoy start -->
+    <section class="py-10 lg:py-16">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-6 items-center">
+          <div class="col-span-12 lg:col-span-7 xl:col-span-8">
+            <h2 class="text-[32px] lg:text-3xl xl:text-5xl font-sfBold font-extrabold text-gray-900 pb-6">Click, join, enjoyed</h2>
+            <p class="text-sm lg:text-base text-dark-gray pb-4 lg:pb-5">Pellentesque orci nisi, massa mus. Sed ut eu massa mi nullam. Eget pretium ultricies vestibulum risus pellentesque id ut. Purus, viverra tellus aliquet cras proin. Fringilla arcu, accumsan, vitae facilisi rhoncus nec. </p>
+            <p class="text-sm lg:text-base text-dark-gray pb-9">Ornare neque mauris lorem arcu purus, aliquet scelerisque eget. Convallis aliquam malesuada ut non phasellus adipiscing at duis purus. Elit vitae, sed eget consectetur arcu orci magna etiam gravida. Lectus vel purus augue consectetur eu augue.</p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+              <li class="flex items-center gap-5 text-base text-dark-gray">
+                <img src="../src/images/icons/comment-alt.svg" alt="">
+                Some Featured Application
+              </li>
+              <li class="flex items-center gap-5 text-base text-dark-gray">
+                <img src="../src/images/icons/book.svg" alt="">
+                Some Featured Application
+              </li>
+              <li class="flex items-center gap-5 text-base text-dark-gray">
+                <img src="../src/images/icons/database-alt.svg" alt="">
+                Some Featured Application
+              </li>
+              <li class="flex items-center gap-5 text-base text-dark-gray">
+                <img src="../src/images/icons/table-tennis.svg" alt="">
+                Some Featured Application
+              </li>
+              <li class="flex items-center gap-5 text-base text-dark-gray">
+                <img src="../src/images/icons/dumpster.svg" alt="">
+                Some Featured Application
+              </li>
+              <li class="flex items-center gap-5 text-base text-dark-gray">
+                <img src="../src/images/icons/user-friends.svg" alt="">
+                Some Featured Application
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-span-12 lg:col-span-5 xl:col-span-4">
+            <img src="../src/images/mobile/enjoy.png" alt="" class="mx-auto lg:ml-auto">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- enjoy end -->
+  </main>
+  <!-- main end -->
+ 
+  <!-- footer start -->
+  <footer class="bg-[#021B29]">
+    <section class="py-10 lg:py-16">
+      <div class="container">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- column 1 -->
+          <div>
+            <h4 class="text-[#FEFFFF] text-sm md:text-base font-bold pb-4 md:pb-6 font-sfBold">Home</h4>
+            <ul class="space-y-3 md:space-y-4">
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Mobile App Showcase 1</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Mobile App Showcase 2</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">SaaS 1</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">SaaS 2</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">SaaS 3</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Financial Consulting</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Online Courses</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Medical</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">IT (Software) Company</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Conference</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Digital Agency</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Blog Homepage</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Portfolio Grid View</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Portfolio List View</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Portfolio Slider View</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- column 2 -->
+          <div class="space-y-6">
+            <div>
+              <h4 class="text-[#FEFFFF] text-sm md:text-base font-bold pb-4 md:pb-6 font-sfBold">Blog</h4>
+              <ul class="space-y-3 md:space-y-4">
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Blog List</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Blog Grid</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Blog List with Sidebar</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Blog Grid with Sidebar</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Blog Simple Feed</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Single Post</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Podcast</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-[#FEFFFF] text-sm md:text-base font-bold pb-4 md:pb-6 font-sfBold">Service</h4>
+              <ul class="space-y-3 md:space-y-4">
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Services 1</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Services 2</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-[#FEFFFF] text-sm md:text-base font-bold pb-4 md:pb-6 font-sfBold">About</h4>
+              <ul class="space-y-3 md:space-y-4">
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">About 1</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">About 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- column 3 -->
+          <div>
+            <h4 class="text-[#FEFFFF] text-sm md:text-base font-bold pb-4 md:pb-6 font-sfBold">Others</h4>
+            <ul class="space-y-3 md:space-y-4">
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Service Details 1</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Service Details 2</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Course Details</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Project Details</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Courses</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">404 Error 1</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">404 Error 2</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- column 4 -->
+          <div>
+            <h4 class="text-[#FEFFFF] text-sm md:text-base font-bold pb-4 md:pb-6 font-sfBold">Account</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Account Sign In</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Account Sign Up</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Account Details</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Account Security</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Account Notifications</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Account Messages</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Account Saved Items</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#A2A9B0] text-sm md:text-base font-medium transition-all duration-300 hover:text-secondary">Account Collections</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-6 pb-6 lg:pb-10 border-t border-[#F3F6FF]">
+      <div class="container">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-5">
+          <p class="text-[#A2A9B0] text-xs md:text-base">Copyright © 2023 Cubeicals. All rights reserved.</p>
+
+          <ul class="flex items-center gap-6">
+            <li>
+              <a href="#" class="text-[#A2A9B0] text-sm md:text-base underline transition-all duration-300 hover:text-secondary">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="text-[#A2A9B0] text-sm md:text-base underline transition-all duration-300 hover:text-secondary">Terms of Use</a>
+            </li>
+            <li>
+              <a href="#" class="text-[#A2A9B0] text-sm md:text-base underline transition-all duration-300 hover:text-secondary">Legal</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- footer end -->
+
+  <!-- swiper -->
+  <script src="../src/js/jquery-3.6.1.min.js"></script>
+  <script src="../src/js/swiper-bundle.min.js"></script>
+  <script src="../src/js/mixitup.min.js"></script>
+  <script src='../src/js/any-image-comparison-slider.min.js'></script>
+  <script src="../src/js/script.js"></script>
+</body>
+</html>

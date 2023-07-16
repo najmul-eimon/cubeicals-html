@@ -31,6 +31,7 @@ module.exports = {
         primary: "#254E75",
         "primary-800": "#266080",
         "primary-900": "#115175",
+        "primary-alt": "#2F7D96",
         secondary: "#E45D61",
         "gray": {
           100 : "#F3F6FF",
@@ -42,7 +43,9 @@ module.exports = {
           700 : "#585C7B",
           800 : "#3E4265",
           900 : "#131022"
-        }
+        },
+        "dark-gray": "#606060",
+        "light-gray": "#DEDEDE"
       },
     },
     },
