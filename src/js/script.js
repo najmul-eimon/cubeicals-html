@@ -226,4 +226,64 @@ $('.accordion-head').on('click', function(){
     $(this).parent().find('.accordion-body').slideDown()
     $(this).find('i').addClass('rotate-180')
   }
+});
+
+/*======================= mobile-app-2 > brands ========================*/
+var comSwiper1 = new Swiper(".company-slider-1", {
+  freeMode: false,
+  spaceBetween: 24,
+  grabCursor: false,
+  slidesPerView: 2,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true,
+  },
+  speed: 5000,
+  allowTouchMove:false,
+  freeModeMomentum: false,
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1024:{
+      slidesPerView: 5,
+    }
+  }
+});
+
+var comSwiper2 = new Swiper(".company-slider-2", {
+  freeMode: false,
+  spaceBetween: 24,
+  grabCursor: false,
+  slidesPerView: 2,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true,
+    reverseDirection: true,
+  },
+  speed: 5000,
+  allowTouchMove:false,
+  freeModeMomentum: false,
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1024:{
+      slidesPerView: 5,
+    }
+  }
+});
+
+/*======================= mobile-app-2 > join ========================*/
+$('.masonry-grid').isotope({
+  itemSelector: '.grid-item',
+  columnWidth: 200
 })

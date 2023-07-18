@@ -12,6 +12,19 @@
   src: url('../src/fonts/sf-pro-text-bold.ttf');
 }
 
+.stroke-text{
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  opacity: 0.2;
+}
+
+.stroke-text-white{
+  color: white;
+  -webkit-text-stroke-color: white;
+  opacity: 0.8;
+}
 
 /*-------------------- header ----------------*/
 header{
@@ -236,4 +249,36 @@ header{
 .mobile-app-banner{
   background: url('../src/images/banner/mobile-banner-2.png') no-repeat center;
   background-size: cover;
+}
+
+/*-------------------- mobile-app-2 > brands ----------------*/
+.company-slider-1 .swiper-wrapper,
+.company-slider-2 .swiper-wrapper {
+  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+}
+
+/*-------------------- mobile-app-2 > join ----------------*/
+.masonry-grid .grid-item{
+  width: calc(33% - 20px);
+  margin: 0 12px 16px 12px;
+}
+
+@media screen and (max-width: 1279px) {
+  .masonry-grid .grid-item{
+    width: calc(33% - 24px);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .masonry-grid .grid-item{
+    width: calc(50% - 24px);
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .masonry-grid .grid-item{
+    width: calc(100% - 24px);
+  }
 }
