@@ -282,3 +282,75 @@ header{
     width: calc(100% - 24px);
   }
 }
+
+/*-------------------- digital-agency > work ----------------*/
+.success-products-slider .products-card{
+  box-shadow: 0px 4px 9px -1px rgba(19, 16, 34, 0.03), 0px 4.400000095367432px 20px -1px rgba(19, 16, 34, 0.05);
+}
+
+/* .work .item::before,
+.work .item::after{
+  content: '';
+  position: absolute;
+}
+
+.work .item::after{
+  border: 1px dashed #E2E5F1;
+  z-index: 1;
+}
+
+.work .item::before{
+  z-index: 2;
+}
+
+.work .item:first-child:before,
+.work .item:first-child:after{
+  bottom: -11px;
+  right: -13px;
+  height: 100%;
+  width: 1px;
+}
+
+.work .item:first-child:before{
+  width: 2px;
+  background: linear-gradient(to bottom, #fff, transparent);
+}
+
+.work .item:nth-child(2):before,
+.work .item:nth-child(2):after{
+  bottom: -13px;
+  left: -11px;
+  width: 100%;
+  height: 1px;
+}
+
+.work .item:nth-child(2):before{
+  height: 2px;
+  background: linear-gradient(to left, #fff, transparent);
+}
+
+.work .item:nth-child(3):before,
+.work .item:nth-child(3):after{
+  top: -12px;
+  right: -11px;
+  width: 100%;
+  height: 1px;
+}
+
+.work .item:nth-child(3):before{
+  height: 2px;
+  background: linear-gradient(to right, #fff, transparent);
+}
+
+.work .item:nth-child(4):before,
+.work .item:nth-child(4):after{
+  left: -12px;
+  top: -11px;
+  height: 100%;
+  width: 1px;
+}
+
+.work .item:nth-child(4):before{
+  width: 2px;
+  background: linear-gradient(to top, #fff, transparent);
+} */

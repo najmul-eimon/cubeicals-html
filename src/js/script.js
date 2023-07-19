@@ -12,7 +12,7 @@ var blogBannerSwiper = new Swiper(".blog-banner-slider", {
 var featuredBlogSwiper = new Swiper(".featured-blog-slider", {
   spaceBetween: 24,
   grabCursor: true,
-  centeredSlides: false,
+  centeredSlides: true,
   slidesPerView: 1,
   loop: true,
   autoplay: {
@@ -285,5 +285,51 @@ var comSwiper2 = new Swiper(".company-slider-2", {
 /*======================= mobile-app-2 > join ========================*/
 $('.masonry-grid').isotope({
   itemSelector: '.grid-item',
-  columnWidth: 200
-})
+});
+
+/*======================= digital-agency > banner-scroller ========================*/
+$('.scroller').on('click', function(){
+  var nextSection = $(this).parent().parent().parent().parent().next();
+
+  $('html, body').animate({
+    scrollTop: nextSection.offset().top + 1
+  }, 1000);
+});
+
+
+/*======================= digital-agency > Counter up ========================*/
+$('.counter').counterUp({
+  delay: 10,
+  time: 1000
+});
+
+/*======================= digital-agency > successful-products slider ========================*/
+var successProductsSwiper = new Swiper(".success-products-slider", {
+  spaceBetween: 24,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 2000
+  },
+  speed: 3000,
+  allowTouchMove:true,
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1280: {
+      slidesPerView: 4,
+    },
+    1540: {
+      slidesPerView: 5,
+    }
+  },
+});
