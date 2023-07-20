@@ -204,12 +204,8 @@ header{
 
 .feature-video .video-play .video-icon::after {
   content: '';
-  animation: ripple;
-  animation-duration: 0s;
-  animation-iteration-count: 1;
-  animation-duration: 3s;
+  animation: ripple 2s linear infinite;
   animation-delay: 0;
-  animation-iteration-count: infinite;
   @apply absolute top-0 left-0 h-full w-full rounded-full bg-transparent;
 }
 
@@ -288,69 +284,37 @@ header{
   box-shadow: 0px 4px 9px -1px rgba(19, 16, 34, 0.03), 0px 4.400000095367432px 20px -1px rgba(19, 16, 34, 0.05);
 }
 
-/* .work .item::before,
-.work .item::after{
-  content: '';
-  position: absolute;
+/*-------------------- it-software > service ----------------*/
+.it-service-item .custom-box{
+  filter: drop-shadow(0px 5px 10px rgba(19, 16, 34, 0.08));
+  z-index: -1;
 }
 
-.work .item::after{
-  border: 1px dashed #E2E5F1;
-  z-index: 1;
+.it-service-item .custom-box > div{
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
 }
 
-.work .item::before{
-  z-index: 2;
+@keyframes ripple-wave {
+  to {
+    box-shadow: 0 0 0 15px rgba(60, 111, 247, 0.2), 0 0 0 30px rgba(60, 111, 247, 0.2), 0 0 0 45px rgba(60, 111, 247, 0);
+  }
 }
 
-.work .item:first-child:before,
-.work .item:first-child:after{
-  bottom: -11px;
-  right: -13px;
-  height: 100%;
-  width: 1px;
+.animate-ripple::after{
+  box-shadow: 0 0 rgba(60, 111, 247, 0.2), 0 0 0 15px rgba(60, 111, 247, 0.2), 0 0 0 30px rgba(60, 111, 247, 0.2);
+  animation: ripple-wave 1s linear infinite;
+  animation-play-state: running;
 }
 
-.work .item:first-child:before{
-  width: 2px;
-  background: linear-gradient(to bottom, #fff, transparent);
+/*-------------------- it-software > service ----------------*/
+.medical-banner .fancy-border{
+  filter: drop-shadow(0px 4px 9px rgba(19, 16, 34, 0.03)) drop-shadow(0px 4px 20px rgba(19, 16, 34, 0.05));
 }
 
-.work .item:nth-child(2):before,
-.work .item:nth-child(2):after{
-  bottom: -13px;
-  left: -11px;
-  width: 100%;
-  height: 1px;
+.medical-banner .fancy-border > div{
+  background: linear-gradient(55deg, #78ACCB 0%, #0471B1 46.00%, #006CAB 100%);
 }
 
-.work .item:nth-child(2):before{
-  height: 2px;
-  background: linear-gradient(to left, #fff, transparent);
+.medical-banner .preview-img{
+  background: linear-gradient(55deg, #78ACCB 0%, #0471B1 46.00%, #006CAB 100%);
 }
-
-.work .item:nth-child(3):before,
-.work .item:nth-child(3):after{
-  top: -12px;
-  right: -11px;
-  width: 100%;
-  height: 1px;
-}
-
-.work .item:nth-child(3):before{
-  height: 2px;
-  background: linear-gradient(to right, #fff, transparent);
-}
-
-.work .item:nth-child(4):before,
-.work .item:nth-child(4):after{
-  left: -12px;
-  top: -11px;
-  height: 100%;
-  width: 1px;
-}
-
-.work .item:nth-child(4):before{
-  width: 2px;
-  background: linear-gradient(to top, #fff, transparent);
-} */
