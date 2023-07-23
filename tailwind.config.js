@@ -29,6 +29,13 @@ module.exports = {
       },
       colors: {
         primary: "#254E75",
+        "primary-100": "#BAC7CE",
+        "primary-200": "#A6B9C4",
+        "primary-300": "#90A9B8",
+        "primary-400": "#7B9BAD",
+        "primary-500": "#668DA2",
+        "primary-600": "#517E97",
+        "primary-700": "#3C6F8C",
         "primary-800": "#266080",
         "primary-900": "#115175",
         "primary-alt": "#2F7D96",

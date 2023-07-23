@@ -132,7 +132,7 @@ $('#dark-light-mode').anyImageComparisonSlider({
 });
 
 /*======================= saas-3 > client slider ========================*/
-var blogServiceSwiper = new Swiper(".saas-client-slider", {
+var saasClientSwiper = new Swiper(".saas-client-slider", {
   spaceBetween: 48,
   centeredSlides: false,
   slidesPerView: 1,
@@ -332,4 +332,91 @@ var successProductsSwiper = new Swiper(".success-products-slider", {
       slidesPerView: 5,
     }
   },
+});
+
+/*======================= digital-agency > successful-products slider ========================*/
+var medicalClientSwiper = new Swiper(".medical-client-slider", {
+  loop: true,
+  spaceBetween: 12,
+  slidesPerView: 1,
+  loopedSlides: 3,
+  centeredSlides: true,
+  breakpoints: {
+    576: {
+      loopedSlides: 4,
+    },
+    640: {
+      loopedSlides: 5,
+    },
+  },
+  speed: 1000,
+  autoplay: {
+    delay: 3000
+  },
+  // allowTouchMove: false,
+  // effect: "fade",
+  // thumbs: {
+  //   swiper: medicalClientSwiper,
+  // },
+});
+
+var medicalClientSwiper2 = new Swiper(".medical-client-slider-thumb", {
+  loop: true,
+  spaceBetween: 12,
+  slidesPerView: 3,
+  slideToClickedSlide: true,
+  // freeMode: true,
+  centeredSlides: true,
+  // watchSlidesProgress: true,
+  speed: 1000,
+  autoplay: {
+    delay: 3000
+  },
+  // allowTouchMove: false,
+  breakpoints: {
+    576: {
+      slidesPerView: 4,
+    },
+    640: {
+      slidesPerView: 5,
+    },
+  }
+});
+
+medicalClientSwiper.controller.control = medicalClientSwiper2;
+medicalClientSwiper2.controller.control = medicalClientSwiper;
+
+/*======================= travel-agency > banner slider ========================*/
+var mySwiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 12,
+  slidesPerView: 1,
+  loopedSlides: 3,
+  centeredSlides: false,
+  effect: 'fade',
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+});
+
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 12,
+  slidesPerView: 3,
+  slideToClickedSlide: true,
+  centeredSlides: false,
+});
+
+mySwiper.controller.control = swiper2;
+swiper2.controller.control = mySwiper;
+
+// let slidersCount = mySwiper.params.loop ? mySwiper.slides.length - 2 : mySwiper.slides.length;
+let slidersCount = mySwiper.slides.length;
+	
+$('.swiper-counter .total').html(slidersCount);
+
+mySwiper.on('slideChange', function () {
+  $('.swiper-counter .current').html(this.activeIndex + 1);
+  console.log(this.activeIndex);
 });

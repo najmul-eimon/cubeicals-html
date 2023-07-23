@@ -318,3 +318,125 @@ header{
 .medical-banner .preview-img{
   background: linear-gradient(55deg, #78ACCB 0%, #0471B1 46.00%, #006CAB 100%);
 }
+
+/*-------------------- medical > treatment ----------------*/
+.treatment .single-item{
+  box-shadow: 0px 4px 9px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 20px -1px rgba(19, 16, 34, 0.05);
+}
+
+/*-------------------- medical > client ----------------*/
+.medical-client-slider-thumb .swiper-slide-active > div{
+  height: 90px;
+  width: 90px;
+  border: 6px solid white;
+  filter: drop-shadow(0px 4px 13px rgba(19, 16, 34, 0.06)) drop-shadow(0px 4.8px 24.4px rgba(19, 16, 34, 0.10)); 
+  margin-top: 0;
+}
+
+.medical-client-slider-thumb p{
+  @apply hidden;
+}
+
+.medical-client-slider-thumb .swiper-slide-active p{
+  @apply block;
+}
+
+@media screen and (max-width: 1023px) {
+  .medical-client-slider-thumb .swiper-slide-active > div{
+    height: 72px;
+    width: 72px;
+  }
+}
+
+/*-------------------- travel-agency > banner ----------------*/
+.mySwiper{
+  height: 100vh;
+}
+
+.mySwiper .swiper-slide{
+  position: relative;
+}
+.mySwiper img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+   background-size: cover;
+   background-position: center  center;
+   background-repeat: no-repeat;
+transition: 1.5s all;
+}
+
+.mySwiper .swiper-slide-active img {
+		animation: scale 5s ease forwards;
+}
+
+.mySwiper2 .swiper-slide.swiper-slide-active{
+  display: none;
+  /* animation: scalethumb 5s ease forwards; */
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+         transform: scale(1);
+    }
+}
+@keyframes scalethumb {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    100% {
+         transform: scale(2);
+         opacity: 0;
+         visibility: hidden;
+    }
+}
+
+.swiper-progress-bar{
+	width: 600px;
+    height: 4px;
+	position: relative;
+	background: #eeeeee;
+	
+	
+}
+.progress{
+  height: inherit;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: #007aff;
+  z-index: 1;
+}
+.progress-sections{
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.progress-sections span{
+  flex: 1;
+  height: inherit;
+  border-right: 2px solid #eee;
+}
+
+.progress-sections span:last-child{
+  border-right-width: 0;
+}
+.swiper-counter{
+	width: 600px;
+	margin: 0 auto;
+}
