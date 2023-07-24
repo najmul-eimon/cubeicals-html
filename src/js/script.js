@@ -387,36 +387,71 @@ medicalClientSwiper.controller.control = medicalClientSwiper2;
 medicalClientSwiper2.controller.control = medicalClientSwiper;
 
 /*======================= travel-agency > banner slider ========================*/
-var mySwiper = new Swiper(".mySwiper", {
+var travelBannerSwiper = new Swiper(".travel-banner-slider", {
   loop: true,
-  spaceBetween: 12,
+  spaceBetween: 24,
   slidesPerView: 1,
-  loopedSlides: 3,
+  loopedSlides: 4,
+  allowTouchMove: false,
   centeredSlides: false,
   effect: 'fade',
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar",
   },
+  navigation: {
+    nextEl: ".trending-banner-next",
+    prevEl: ".trending-banner-prev",
+  },
 });
 
-var swiper2 = new Swiper(".mySwiper2", {
+var travelBannerThumb = new Swiper(".travel-banner-thumb", {
   loop: true,
-  spaceBetween: 12,
-  slidesPerView: 3,
+  spaceBetween: 24,
+  slidesPerView: 2.5,
+  allowTouchMove: false,
   slideToClickedSlide: true,
   centeredSlides: false,
+  breakpoints: {
+    640: {
+      slidesPerView: 3.5,
+    },
+  }
 });
 
-mySwiper.controller.control = swiper2;
-swiper2.controller.control = mySwiper;
+travelBannerSwiper.controller.control = travelBannerThumb;
+travelBannerThumb.controller.control = travelBannerSwiper;
 
-// let slidersCount = mySwiper.params.loop ? mySwiper.slides.length - 2 : mySwiper.slides.length;
-let slidersCount = mySwiper.slides.length;
+// let slidersCount = travelBannerSwiper.params.loop ? travelBannerSwiper.slides.length - 2 : travelBannerSwiper.slides.length;
+let slidersCount = travelBannerSwiper.slides.length;
 	
 $('.swiper-counter .total').html(slidersCount);
 
-mySwiper.on('slideChange', function () {
+travelBannerSwiper.on('slideChange', function () {
   $('.swiper-counter .current').html(this.activeIndex + 1);
   console.log(this.activeIndex);
+});
+
+/*======================= travel-agency > trending-slider ========================*/
+var travelTrendingSwiper = new Swiper(".travel-trending-slider", {
+  spaceBetween: 24,
+  grabCursor: true,
+  slidesPerView: 1,
+  disableOnInteraction: false,
+  loop: true,
+  navigation: {
+    nextEl: ".trending-button-next",
+    prevEl: ".trending-button-prev",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  },
 });
