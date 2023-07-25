@@ -363,9 +363,10 @@ header{
   @apply bg-secondary;
 }
 
-.travel-banner-slider .swiper-slide{
-  position: relative;
-}
+/* .travel-banner-slider .swiper-slide{
+  @apply relative;
+} */
+
 .travel-banner-slider img {
   @apply absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000;
 }
@@ -379,11 +380,11 @@ header{
 }
 
 @keyframes scale {
-    0% {
-        transform: scale(0.5);
-    }
+  0% {
+    transform: scale(0.5);
+  }
 
-    100% {
-         transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }

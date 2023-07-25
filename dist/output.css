@@ -2923,9 +2923,9 @@ header{
   background-color: rgb(228 93 97 / var(--tw-bg-opacity));
 }
 
-.travel-banner-slider .swiper-slide{
-  position: relative;
-}
+/* .travel-banner-slider .swiper-slide{
+  @apply relative;
+} */
 
 .travel-banner-slider img {
   position: absolute;
