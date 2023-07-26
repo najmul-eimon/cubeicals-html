@@ -339,16 +339,8 @@ var medicalClientSwiper = new Swiper(".medical-client-slider", {
   loop: true,
   spaceBetween: 12,
   slidesPerView: 1,
-  loopedSlides: 3,
+  loopedSlides: 11,
   centeredSlides: true,
-  breakpoints: {
-    576: {
-      loopedSlides: 4,
-    },
-    640: {
-      loopedSlides: 5,
-    },
-  },
   speed: 1000,
   autoplay: {
     delay: 3000
@@ -365,14 +357,11 @@ var medicalClientSwiper2 = new Swiper(".medical-client-slider-thumb", {
   spaceBetween: 12,
   slidesPerView: 3,
   slideToClickedSlide: true,
-  // freeMode: true,
   centeredSlides: true,
-  // watchSlidesProgress: true,
   speed: 1000,
   autoplay: {
     delay: 3000
   },
-  // allowTouchMove: false,
   breakpoints: {
     576: {
       slidesPerView: 4,
@@ -380,7 +369,10 @@ var medicalClientSwiper2 = new Swiper(".medical-client-slider-thumb", {
     640: {
       slidesPerView: 5,
     },
-  }
+  },
+  // watchSlidesProgress: true,
+  // freeMode: true,
+  // allowTouchMove: false,
 });
 
 medicalClientSwiper.controller.control = medicalClientSwiper2;
@@ -391,9 +383,8 @@ var travelBannerSwiper = new Swiper(".travel-banner-slider", {
   loop: true,
   spaceBetween: 24,
   slidesPerView: 1,
-  loopedSlides: 4,
+  loopedSlides: 6,
   allowTouchMove: false,
-  centeredSlides: false,
   effect: 'fade',
   pagination: {
     el: ".swiper-pagination",
@@ -410,8 +401,7 @@ var travelBannerThumb = new Swiper(".travel-banner-thumb", {
   spaceBetween: 24,
   slidesPerView: 2.5,
   allowTouchMove: false,
-  slideToClickedSlide: true,
-  centeredSlides: false,
+  slideToClickedSlide: false,
   breakpoints: {
     640: {
       slidesPerView: 3.5,

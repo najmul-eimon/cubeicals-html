@@ -1021,10 +1021,6 @@ video {
   height: 100vh;
 }
 
-.max-h-\[234px\] {
-  max-height: 234px;
-}
-
 .min-h-\[600px\] {
   min-height: 600px;
 }
@@ -2923,10 +2919,6 @@ header{
   background-color: rgb(228 93 97 / var(--tw-bg-opacity));
 }
 
-/* .travel-banner-slider .swiper-slide{
-  @apply relative;
-} */
-
 .travel-banner-slider img {
   position: absolute;
   inset: 0px;
@@ -3261,10 +3253,6 @@ header{
 
   .md\:h-full {
     height: 100%;
-  }
-
-  .md\:max-h-none {
-    max-height: none;
   }
 
   .md\:w-1\/2 {

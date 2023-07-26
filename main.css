@@ -363,10 +363,6 @@ header{
   @apply bg-secondary;
 }
 
-/* .travel-banner-slider .swiper-slide{
-  @apply relative;
-} */
-
 .travel-banner-slider img {
   @apply absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000;
 }
