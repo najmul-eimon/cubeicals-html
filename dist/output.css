@@ -2393,6 +2393,10 @@ video {
   text-decoration-line: underline;
 }
 
+.underline-offset-8 {
+  text-underline-offset: 8px;
+}
+
 .opacity-0 {
   opacity: 0;
 }
